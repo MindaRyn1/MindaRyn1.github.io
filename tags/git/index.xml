@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Git on 老王同学</title>
+        <link>/tags/git/</link>
+        <description>Recent content in Git on 老王同学</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>老王同学的技术博客</copyright>
+        <lastBuildDate>Sat, 10 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>git的注意事项与规范</title>
+        <link>/p/git%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E4%B8%8E%E8%A7%84%E8%8C%83/</link>
+        <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
+        
+        <guid>/p/git%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E4%B8%8E%E8%A7%84%E8%8C%83/</guid>
+        <description>&lt;img src="/p/git%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E4%B8%8E%E8%A7%84%E8%8C%83/01.png" alt="Featured image of post git的注意事项与规范" /&gt;&lt;h2 id=&#34;基本概念&#34;&gt;基本概念
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/git%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E4%B8%8E%E8%A7%84%E8%8C%83/02.jpg&#34;
+	width=&#34;512&#34;
+	height=&#34;158&#34;
+	srcset=&#34;/p/git%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E4%B8%8E%E8%A7%84%E8%8C%83/02_hu_be0cdeef203a54c8.jpg 480w, /p/git%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E4%B8%8E%E8%A7%84%E8%8C%83/02_hu_26ec891fcb7685d.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;git工作原理&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;324&#34;
+		data-flex-basis=&#34;777px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;常用命令&#34;&gt;常用命令
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/git%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E4%B8%8E%E8%A7%84%E8%8C%83/03.jpg&#34;
+	width=&#34;2076&#34;
+	height=&#34;1466&#34;
+	srcset=&#34;/p/git%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E4%B8%8E%E8%A7%84%E8%8C%83/03_hu_1a0040a8664f157.jpg 480w, /p/git%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E4%B8%8E%E8%A7%84%E8%8C%83/03_hu_e3a48cc6b88db649.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;git命令&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;141&#34;
+		data-flex-basis=&#34;339px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;git分支规范&#34;&gt;git分支规范
+&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;分支类型&lt;/th&gt;
+          &lt;th&gt;说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;主分支（master）&lt;/td&gt;
+          &lt;td&gt;存放正式发布的代码&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;开发分支（dev）&lt;/td&gt;
+          &lt;td&gt;存放最新的开发代码&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;功能分支（feature）&lt;/td&gt;
+          &lt;td&gt;每个新功能或修复都在一个独立的分支上进行开发&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;热修复分支（hotfix）&lt;/td&gt;
+          &lt;td&gt;用于修复生产环境中的紧急问题&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;发布分支（release）&lt;/td&gt;
+          &lt;td&gt;用于准备发布的代码，从dev分支创建，发布后合并到master和dev分支&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;测试分支（test）&lt;/td&gt;
+          &lt;td&gt;用于功能测试，从feature分支创建，测试通过后合并到dev分支&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;预发布分支（pre-release）&lt;/td&gt;
+          &lt;td&gt;用于测试新功能或修复，从dev分支创建，测试通过后合并到release分支&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;预发布测试分支（pre-release-test）&lt;/td&gt;
+          &lt;td&gt;用于预发布测试，从pre-release分支创建，测试通过后合并到release分支&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;git提交规范&#34;&gt;git提交规范
+&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;类型前缀&lt;/th&gt;
+          &lt;th&gt;用途&lt;/th&gt;
+          &lt;th&gt;eg&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;feat&lt;/td&gt;
+          &lt;td&gt;新增功能（feature）&lt;/td&gt;
+          &lt;td&gt;feat: 添加用户登录功能&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;fix&lt;/td&gt;
+          &lt;td&gt;修复 bug&lt;/td&gt;
+          &lt;td&gt;fix: 修复登录页面的 bug&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;docs&lt;/td&gt;
+          &lt;td&gt;仅文档修改（如 README、注释）&lt;/td&gt;
+          &lt;td&gt;docs: 更新 API 文档&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;style&lt;/td&gt;
+          &lt;td&gt;仅格式调整（不影响代码逻辑，如空格、缩进、换行）&lt;/td&gt;
+          &lt;td&gt;style: 调整代码缩进&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;refactor&lt;/td&gt;
+          &lt;td&gt;代码重构（既不新增功能，也不修复 bug）&lt;/td&gt;
+          &lt;td&gt;refactor: 优化数据库查询&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;test&lt;/td&gt;
+          &lt;td&gt;新增 / 修改测试代码&lt;/td&gt;
+          &lt;td&gt;test: 添加单元测试&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;chore&lt;/td&gt;
+          &lt;td&gt;构建流程、工具配置、依赖管理等杂项修改&lt;/td&gt;
+          &lt;td&gt;chore: 更新依赖版本&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;misc&lt;/td&gt;
+          &lt;td&gt;其他改变&lt;/td&gt;
+          &lt;td&gt;misc: 调整代码结构&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

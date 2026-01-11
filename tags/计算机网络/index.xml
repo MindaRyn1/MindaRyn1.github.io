@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>计算机网络 on 老王同学</title>
+        <link>/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</link>
+        <description>Recent content in 计算机网络 on 老王同学</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>老王同学的技术博客</copyright>
+        <lastBuildDate>Tue, 10 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>计算机网络</title>
+        <link>/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</link>
+        <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</guid>
+        <description>&lt;h2 id=&#34;osirm-七层模型&#34;&gt;OSI/RM 七层模型
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image.png&#34;
+	width=&#34;767&#34;
+	height=&#34;380&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image_hu_d4c3da39985d705.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image_hu_f21c32e1a062774f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;201&#34;
+		data-flex-basis=&#34;484px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;网络技术标准与协议&#34;&gt;网络技术标准与协议
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-1.png&#34;
+	width=&#34;775&#34;
+	height=&#34;480&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-1_hu_806a6b011fc7d28b.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-1_hu_537c51b05ccf8f89.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;161&#34;
+		data-flex-basis=&#34;387px&#34;
+	
+&gt;
+TCP/IP 协议又称重量协议&lt;/br&gt;
+IPX/SPX 协议（局域网协议）&lt;/br&gt;
+TCP 三次握手协议（可靠，有验证 ）&lt;/br&gt;
+DNS 协议&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;递归查询：目标 ip 与域名 1 对 1&lt;/li&gt;
+&lt;li&gt;迭代查询：目标 ip 与域名的关系，可以是 1 对多&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;计算机网络分类-拓扑结构&#34;&gt;计算机网络分类-拓扑结构
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-2.png&#34;
+	width=&#34;673&#34;
+	height=&#34;448&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-2_hu_663775232d88b6db.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-2_hu_6646fd1608a001e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;150&#34;
+		data-flex-basis=&#34;360px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;特殊的-ip-地址&#34;&gt;特殊的 IP 地址
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-3.png&#34;
+	width=&#34;745&#34;
+	height=&#34;426&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-3_hu_421b3b0bdcd15f12.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-3_hu_6460b7cde4670c8c.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;174&#34;
+		data-flex-basis=&#34;419px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

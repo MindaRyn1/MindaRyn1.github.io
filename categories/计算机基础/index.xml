@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>计算机基础 on 老王同学</title>
+        <link>/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</link>
+        <description>Recent content in 计算机基础 on 老王同学</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>老王同学的技术博客</copyright>
+        <lastBuildDate>Tue, 10 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>操作系统</title>
+        <link>/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
+        <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</guid>
+        <description>&lt;h2 id=&#34;操作系统的基本原理&#34;&gt;操作系统的基本原理
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image.png&#34;
+	width=&#34;794&#34;
+	height=&#34;475&#34;
+	srcset=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image_hu_e48c06c0c1c7172a.png 480w, /p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image_hu_a815a43a96ae9b27.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;401px&#34;
+	
+&gt;
+操作系统可以看作是人机交互的接口&lt;/p&gt;
+&lt;h2 id=&#34;进程的状态&#34;&gt;进程的状态
+&lt;/h2&gt;&lt;div style=&#34;column-count: 2&#34;&gt;
+等待态：没有充足资源，没有 CPU 资源&lt;/br&gt;
+就绪态：资源充足+缺 CPU&lt;/br&gt;
+运行态：资源充足+CPU 资源&lt;/br&gt;
+&lt;p&gt;活跃阻塞=等待态 &lt;/br&gt;
+静止阻塞:都缺，但人为挂起 &lt;/br&gt;
+静止就绪: 不缺资源，但人为挂起&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-1.png&#34;
+	width=&#34;808&#34;
+	height=&#34;360&#34;
+	srcset=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-1_hu_8f83b5f537041cc8.png 480w, /p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-1_hu_52fd92dfbc73420a.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;224&#34;
+		data-flex-basis=&#34;538px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;pv-操作&#34;&gt;PV 操作
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-3.png&#34;
+	width=&#34;754&#34;
+	height=&#34;458&#34;
+	srcset=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-3_hu_d8755f89f15db2d6.png 480w, /p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-3_hu_1fcf2abdeede4684.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;164&#34;
+		data-flex-basis=&#34;395px&#34;
+	
+&gt;
+加入 pv 操作：并发进程操作时加阻塞防止溢出&lt;/p&gt;
+&lt;h2 id=&#34;死锁&#34;&gt;死锁
+&lt;/h2&gt;&lt;p&gt;系统在某个时刻所有的可用的资源都分配出去，所有的进程都等待着其他进程放资源而阻塞，造成死锁&lt;/p&gt;
+&lt;h2 id=&#34;索引文件结构&#34;&gt;索引文件结构
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-2.png&#34;
+	width=&#34;612&#34;
+	height=&#34;399&#34;
+	srcset=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-2_hu_4153f4460cc5192f.png 480w, /p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-2_hu_a2831ddf1a3ee0ac.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;文件结构&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;153&#34;
+		data-flex-basis=&#34;368px&#34;
+	
+&gt;
+直接索引：4k* 10&lt;/br&gt;
+1 级间接索引：4k* 1024&lt;/br&gt;
+2 级间接索引：4k* 1024&lt;sup&gt;2&lt;/sup&gt;&lt;/br&gt;
+3 级间接索引：4k* 1024&lt;sup&gt;3&lt;/sup&gt;&lt;/br&gt;
+间接的级别越高，访问效率越低&lt;/p&gt;
+&lt;h2 id=&#34;数据传输方式&#34;&gt;数据传输方式
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;是指内存和外设之间的数据传输问题&lt;/strong&gt;
+&lt;img src=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-4.png&#34;
+	width=&#34;793&#34;
+	height=&#34;407&#34;
+	srcset=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-4_hu_b0a6e5b1b3e355db.png 480w, /p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-4_hu_fc6af7946abf6213.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;194&#34;
+		data-flex-basis=&#34;467px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;程序控制方式&lt;/strong&gt; 最低级也是 CPU 介入最多的方式，外设处于被动，由 CPU 发出查询指令，查询是否传输成功&lt;/br&gt;
+&lt;strong&gt;程序中断方式&lt;/strong&gt;当完成传输时，会产生中断，提高效率&lt;/br&gt;
+&lt;strong&gt;DMA 方式&lt;/strong&gt; 直接存取控制，有 DMA 控制器控制外设与内存的数据传输&lt;/p&gt;
+&lt;h2 id=&#34;微内核&#34;&gt;微内核
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-5.png&#34;
+	width=&#34;829&#34;
+	height=&#34;480&#34;
+	srcset=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-5_hu_5befaa1a1b84c641.png 480w, /p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-5_hu_435c402f1a9afd.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;172&#34;
+		data-flex-basis=&#34;414px&#34;
+	
+&gt;
+&lt;strong&gt;单体内核&lt;/strong&gt; 减少系统开销，但系统庞大，占用资源多，系统稳定性差&lt;/br&gt;
+&lt;strong&gt;微内核&lt;/strong&gt; 内核精炼，便于移植，系统可靠性，安全性和稳定性高，可用于分布式系统，因需要频繁切换内核和用户态，效率相对较低。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>计算机结构</title>
+        <link>/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/</link>
+        <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/</guid>
+        <description>&lt;h2 id=&#34;cpu-结构&#34;&gt;CPU 结构
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/01.png&#34;
+	width=&#34;859&#34;
+	height=&#34;413&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/01_hu_72fd171b9f54100c.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/01_hu_63c5c5cb86f695ca.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;cpu 结构&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;207&#34;
+		data-flex-basis=&#34;499px&#34;
+	
+&gt;
+CPU 组成：由运算器、控制器、寄存器组（读取速度最快）、内部总线组成&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;运算器组成&#34;&gt;运算器组成:
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;算数逻辑单元 ALU(Arithmetic logic unit):&lt;/strong&gt; &lt;br&gt;
+实现对数据的算数和逻辑运算&lt;br&gt;
+&lt;strong&gt;累加寄存器 AC(Accumulator):&lt;/strong&gt; &lt;br&gt;
+提供数据并暂存运算结果&lt;br&gt;
+&lt;strong&gt;数据缓冲寄存器 DR(Data Register):&lt;/strong&gt; &lt;br&gt;
+作为 CPU 和内存、外设之间数据传送的中转站，暂时存放内存的指令或数据&lt;br&gt;
+&lt;strong&gt;状态条件寄存器 PSW(Program Status Word):&lt;/strong&gt; &lt;br&gt;
+保存指令运行结果相关的标志位，如中断或进位等标志&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;控制器&#34;&gt;控制器
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;指令寄存器 IR （ Instruction Register ） :&lt;/strong&gt; &lt;br&gt;
+暂存当前 CPU 正在执行的指令【操作码和地址码在这里存储】对于用户是透明的&lt;br&gt;
+&lt;strong&gt;程序计数器 PC （ Program Counter ）：&lt;/strong&gt; &lt;br&gt; 用于存放下一条指令的地址&lt;br&gt;
+&lt;strong&gt;地址寄存器 AR （ Address Register ）：&lt;/strong&gt; &lt;br&gt; 保存当前 CPU 所访问的内存地址&lt;br&gt;
+&lt;strong&gt;指令译码器 ID （ Instruction Decoder）：&lt;/strong&gt; &lt;br&gt; 分析指令操作码&lt;/p&gt;
+&lt;h2 id=&#34;计算机体系结构分类flynn&#34;&gt;计算机体系结构分类&amp;ndash;Flynn
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/02.png&#34;
+	width=&#34;774&#34;
+	height=&#34;477&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/02_hu_e6c92abd7e19ab20.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/02_hu_86bd54e6aa3db548.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;体系&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;162&#34;
+		data-flex-basis=&#34;389px&#34;
+	
+&gt;
+&lt;strong&gt;SISD&lt;/strong&gt; 单片机 &lt;br&gt;
+&lt;strong&gt;SIMD&lt;/strong&gt; 并行，阵列处理（对数组操作）&lt;br&gt;
+&lt;strong&gt;MISD&lt;/strong&gt; 理论模型 &lt;br&gt;
+&lt;strong&gt;MIMD&lt;/strong&gt; 个人 pc，计算机系统&lt;/p&gt;
+&lt;h2 id=&#34;cisc-与-risc&#34;&gt;CISC 与 RISC
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/03.png&#34;
+	width=&#34;855&#34;
+	height=&#34;288&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/03_hu_4acd78cf59e63e2b.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/03_hu_1f7a0423b054a4d2.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;296&#34;
+		data-flex-basis=&#34;712px&#34;
+	
+&gt;
+&lt;strong&gt;CISC&lt;/strong&gt; 计算机不发达时期的产物，指令多，复杂
+&lt;strong&gt;RISC&lt;/strong&gt; 现代计算机，指令少，复杂度低，引入了寄存器，效率高&lt;/p&gt;
+&lt;h2 id=&#34;存储结构&#34;&gt;存储结构
+&lt;/h2&gt;&lt;h3 id=&#34;计算机层次存储结构&#34;&gt;计算机层次存储结构
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/06.png&#34;
+	width=&#34;710&#34;
+	height=&#34;379&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/06_hu_78bf8929bc070c77.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/06_hu_1e44c1fc4aee9e66.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;存储结构&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;187&#34;
+		data-flex-basis=&#34;449px&#34;
+	
+&gt;
+引入&lt;strong&gt;cache&lt;/strong&gt;的原因：存在局部性原理 Cache 和 CPU 交互反交互的时候，暂停和内存的交互，速度就会很快。引入 cache 在提高速度的同时，也没有增加多少成本&lt;/br&gt;
+&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/07.png&#34;
+	width=&#34;774&#34;
+	height=&#34;208&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/07_hu_e68d02307aebcc09.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/07_hu_9ad26545bb41ea20.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;cache&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;372&#34;
+		data-flex-basis=&#34;893px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;局部性原理&#34;&gt;局部性原理
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;时间局部性:刚刚访问完数据又立即访问，不需要等待。&lt;/li&gt;
+&lt;li&gt;空间局部性:例如数组的初始化处理，在将数组初始化的过程中，初始化完这一个位置后立即去初始化下一个临近的空间。&lt;/li&gt;
+&lt;li&gt;工作集原理:工作即是进程，运行时被频繁访问的页面集合。将这些集合打包放进 Cache 里面去，就不需要频繁的替换掉。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;主存储器&#34;&gt;主存储器
+&lt;/h3&gt;&lt;h4 id=&#34;主存的分类&#34;&gt;主存的分类
+&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;随机存取存储器：&lt;/strong&gt; DRAM 动态 RAM,SRAM 静态 RAM（断电后无法写入保存数据）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;只读存储器：&lt;/strong&gt; MROM,PROM,EPROM,flash memory（断电后依然可以写入保存数据）&lt;/p&gt;
+&lt;h3 id=&#34;磁盘工作原理&#34;&gt;磁盘工作原理
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/09.png&#34;
+	width=&#34;714&#34;
+	height=&#34;345&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/09_hu_4d22fffcc5d337c4.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/09_hu_1ea698f54ea872a9.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;磁盘&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;206&#34;
+		data-flex-basis=&#34;496px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;总线系统&#34;&gt;总线系统
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;内部总线&lt;/strong&gt;&lt;/br&gt;
+通常是指微机内部的，外部芯片与处理器之间的联系，属于是芯片级别的总线&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;系统总线&lt;/strong&gt;&lt;/br&gt;
+属于是微机中各个插件板与系统之间的总线，属于是插件板级别的总线，如 PCI，VGA
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;数据总线&lt;/strong&gt;:是用来传输数据的，比如说计算机的 32 位和 64 位，说明了系统总线的宽度就是这么个位数，那么一个周期能够传输的数据是 32164bit。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;地址总线&lt;/strong&gt;:若地址总线的位数是 32 位，那么它代表的地址总线宽度为 2^32，即 4G。因此操作系统是 32 位的，那么他能管理的内存最多是 4g，当然也有硬件有一定关系。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;控制总线&lt;/strong&gt;: 发送相应的控制信号的总线。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;外部总线&lt;/strong&gt;&lt;/br&gt;
+属于是外部设备的总线。&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>计算机网络</title>
+        <link>/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</link>
+        <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</guid>
+        <description>&lt;h2 id=&#34;osirm-七层模型&#34;&gt;OSI/RM 七层模型
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image.png&#34;
+	width=&#34;767&#34;
+	height=&#34;380&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image_hu_d4c3da39985d705.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image_hu_f21c32e1a062774f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;201&#34;
+		data-flex-basis=&#34;484px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;网络技术标准与协议&#34;&gt;网络技术标准与协议
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-1.png&#34;
+	width=&#34;775&#34;
+	height=&#34;480&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-1_hu_806a6b011fc7d28b.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-1_hu_537c51b05ccf8f89.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;161&#34;
+		data-flex-basis=&#34;387px&#34;
+	
+&gt;
+TCP/IP 协议又称重量协议&lt;/br&gt;
+IPX/SPX 协议（局域网协议）&lt;/br&gt;
+TCP 三次握手协议（可靠，有验证 ）&lt;/br&gt;
+DNS 协议&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;递归查询：目标 ip 与域名 1 对 1&lt;/li&gt;
+&lt;li&gt;迭代查询：目标 ip 与域名的关系，可以是 1 对多&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;计算机网络分类-拓扑结构&#34;&gt;计算机网络分类-拓扑结构
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-2.png&#34;
+	width=&#34;673&#34;
+	height=&#34;448&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-2_hu_663775232d88b6db.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-2_hu_6646fd1608a001e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;150&#34;
+		data-flex-basis=&#34;360px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;特殊的-ip-地址&#34;&gt;特殊的 IP 地址
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-3.png&#34;
+	width=&#34;745&#34;
+	height=&#34;426&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-3_hu_421b3b0bdcd15f12.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-3_hu_6460b7cde4670c8c.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;174&#34;
+		data-flex-basis=&#34;419px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>数据的表示</title>
+        <link>/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/</link>
+        <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/</guid>
+        <description>&lt;h2 id=&#34;数据编码&#34;&gt;数据编码
+&lt;/h2&gt;&lt;p&gt;若用 1 个字节也就是 8bit 来存放数据
+&lt;img src=&#34;/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/01.png&#34;
+	width=&#34;967&#34;
+	height=&#34;368&#34;
+	srcset=&#34;/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/01_hu_5e4db20b422b636c.png 480w, /p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/01_hu_66f086509175312a.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;数据编码&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;262&#34;
+		data-flex-basis=&#34;630px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;最高位为符号位 0 为正数，1 为负数&lt;/li&gt;
+&lt;li&gt;原码不能直接运算（eg，1-1）&lt;/li&gt;
+&lt;li&gt;反码的正数与原码相同，负数符号位不变，其他位置按位取反&lt;/li&gt;
+&lt;li&gt;补码的正数与反码相同，其他位不变，在反码的末位+1&lt;/li&gt;
+&lt;li&gt;移码在补码的基础上，把首位取反，（移码中 0 为负数，1 为正数）
+&lt;img src=&#34;/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/02.png&#34;
+	width=&#34;811&#34;
+	height=&#34;498&#34;
+	srcset=&#34;/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/02_hu_1aa45837aa610d5f.png 480w, /p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/02_hu_ef39a3accd8d3bc6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;范围&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;162&#34;
+		data-flex-basis=&#34;390px&#34;
+	
+&gt;
+以 8bit 为例&lt;/br&gt;
+原码范围为 -(2&lt;sup&gt;8-1&lt;/sup&gt;-1)&lt;del&gt;(2&lt;sup&gt;8-1&lt;/sup&gt;-1) 范围：-127&lt;/del&gt;127&lt;/br&gt;
+反码范围为 -(2&lt;sup&gt;8-1&lt;/sup&gt;-1)&lt;del&gt;(2&lt;sup&gt;8-1&lt;/sup&gt;-1) 范围：-127&lt;/del&gt;127&lt;/br&gt;
+补码范围为 -(2&lt;sup&gt;8-1&lt;/sup&gt;-1)&lt;del&gt;(2&lt;sup&gt;8-1&lt;/sup&gt;-1) 范围：-128&lt;/del&gt;127（补码因进位表示，故多一位）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;浮点数运算&#34;&gt;浮点数运算
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/03.png&#34;
+	width=&#34;725&#34;
+	height=&#34;279&#34;
+	srcset=&#34;/p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/03_hu_23ac0c8effc959a1.png 480w, /p/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA/03_hu_d3296409a30d3624.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;浮点数&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;259&#34;
+		data-flex-basis=&#34;623px&#34;
+	
+&gt;
+注意使用科学计数法
+N = M * R&lt;sup&gt;e&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>数据库系统</title>
+        <link>/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/</link>
+        <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/</guid>
+        <description>&lt;h2 id=&#34;三级模式&#34;&gt;三级模式
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image.png&#34;
+	width=&#34;563&#34;
+	height=&#34;470&#34;
+	srcset=&#34;/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image_hu_558c22f57fe93b61.png 480w, /p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image_hu_dc419fb8dd1b82ad.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;三级模式&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;119&#34;
+		data-flex-basis=&#34;287px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;数据库设计过程&#34;&gt;数据库设计过程
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-1.png&#34;
+	width=&#34;605&#34;
+	height=&#34;441&#34;
+	srcset=&#34;/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-1_hu_fb8153c37a068504.png 480w, /p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-1_hu_ab454da19439e38a.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;数据库&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;137&#34;
+		data-flex-basis=&#34;329px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;e-r-模型&#34;&gt;E-R 模型
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-2.png&#34;
+	width=&#34;540&#34;
+	height=&#34;439&#34;
+	srcset=&#34;/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-2_hu_b9723724a1f3cf87.png 480w, /p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-2_hu_814e3a97944658d4.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34; E-R 模型&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;123&#34;
+		data-flex-basis=&#34;295px&#34;
+	
+&gt;
+实体与关系模式&lt;/br&gt;
+1 对 1——至少有两种关系模式&lt;/br&gt;
+1 对 多——职工与部门&lt;/br&gt;
+多对多——学生与课程&lt;/p&gt;
+&lt;h2 id=&#34;键&#34;&gt;键
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-3.png&#34;
+	width=&#34;671&#34;
+	height=&#34;406&#34;
+	srcset=&#34;/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-3_hu_6a27d97017a74f6a.png 480w, /p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-3_hu_89a0537a73ec0e99.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;165&#34;
+		data-flex-basis=&#34;396px&#34;
+	
+&gt;
+超键与候选键的区别：超键存在冗余&lt;/p&gt;
+&lt;h2 id=&#34;范式&#34;&gt;范式
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-4.png&#34;
+	width=&#34;774&#34;
+	height=&#34;414&#34;
+	srcset=&#34;/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-4_hu_d8733ee258aee3a1.png 480w, /p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-4_hu_df6246385f2136e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;186&#34;
+		data-flex-basis=&#34;448px&#34;
+	
+&gt;
+&lt;strong&gt;1NF&lt;/strong&gt; 只包含原子值，每一个分量都是不可再分的数据项&lt;/br&gt;
+&lt;strong&gt;2NF&lt;/strong&gt; 当且仅当 R 是 1NF,且每一个非主属性完全依赖主键(不存在部分函数依赖)&lt;/br&gt;
+&lt;strong&gt;3NF&lt;/strong&gt; 当且仅当 R 是 2NF,且 E 中没有非主属性传递依赖于码(不存在部分函数依赖)&lt;/br&gt;
+&lt;strong&gt;BCNF&lt;/strong&gt; E 中每个依赖关系必定包含 E 的某个候选关键字
+存在问题：数据冗余，插入异常，删除异常，更新异常&lt;/p&gt;
+&lt;h2 id=&#34;并发控制&#34;&gt;并发控制
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-5.png&#34;
+	width=&#34;770&#34;
+	height=&#34;441&#34;
+	srcset=&#34;/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-5_hu_10af131b0472b9fd.png 480w, /p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-5_hu_6277ea0f4c15f9bd.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;174&#34;
+		data-flex-basis=&#34;419px&#34;
+	
+&gt;
+&lt;strong&gt;事务&lt;/strong&gt; 把操作封装起来，看作一个整体，这些操作同时完成或同时失败。
+可能出现的问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;丢失更新&lt;/li&gt;
+&lt;li&gt;不可重复读&lt;/li&gt;
+&lt;li&gt;读“脏”数据&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;解决办法&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一级封锁协议：事务 T 在修改数据 R 之前必须先对其加 X 锁，防止丢失修改&lt;/li&gt;
+&lt;li&gt;二级封锁协议：一级封锁协议加上事务 T 在修改数据 R 之前对其加 S 锁,读完后释放 S 锁，防止读“脏”数据&lt;/li&gt;
+&lt;li&gt;三级封锁协议：一级封锁协议加上事务 T 在修改数据 R 之前对其加 S 锁,事务结束才释放 S 锁，防止数据重复读&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;数据库安全&#34;&gt;数据库安全
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-6.png&#34;
+	width=&#34;786&#34;
+	height=&#34;392&#34;
+	srcset=&#34;/p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-6_hu_51a96112e83c5be5.png 480w, /p/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/image-6_hu_5690f1b880825dcc.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;数据库安全&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;200&#34;
+		data-flex-basis=&#34;481px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;数据库备份与恢复&#34;&gt;数据库备份与恢复
+&lt;/h2&gt;&lt;h3 id=&#34;分类方式一&#34;&gt;分类方式一
+&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;备份方式&lt;/th&gt;
+          &lt;th&gt;特点&lt;/th&gt;
+          &lt;th&gt;优点&lt;/th&gt;
+          &lt;th&gt;缺点&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;冷备份(静态备份)&lt;/td&gt;
+          &lt;td&gt;在数据库正常关闭的状态下将数据库的文件全部备份&lt;/td&gt;
+          &lt;td&gt;速度快&lt;/td&gt;
+          &lt;td&gt;不能按表或用户恢复&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;热备份(动态备份)&lt;/td&gt;
+          &lt;td&gt;在数据库正常运行的状态下将数据库的数据文件备份&lt;/td&gt;
+          &lt;td&gt;可实现恢复某一时间点恢复&lt;/td&gt;
+          &lt;td&gt;不能出错&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;分类方式二&#34;&gt;分类方式二
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;完全备份&lt;/strong&gt; 备份所有数据&lt;/br&gt;
+&lt;strong&gt;差量备份&lt;/strong&gt; 仅备份上次完全备份后变化的数据&lt;/br&gt;
+&lt;strong&gt;增量备份&lt;/strong&gt; 备份上传备份后变化的数据&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;静态海量转储&lt;/strong&gt; 系统无运行事务时，转储全部数据库&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动态海量转储&lt;/strong&gt; 系统运行事务时，转储全部数据库&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;静态增量转储&lt;/strong&gt; 系统无运行事务时，转储上次更新的数据&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动态增量转储&lt;/strong&gt; 系统运行事务时，转储上次更新的数据&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

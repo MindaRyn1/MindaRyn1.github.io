@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on MindaRyn</title>
+        <link>/jp/page/</link>
+        <description>Recent content in Pages on MindaRyn</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>jp</language>
+        <copyright>老王同学的技术博客</copyright><atom:link href="/jp/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About</title>
+        <link>/jp/about/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/jp/about/</guid>
+        <description>&lt;p&gt;こんにちは！小さなサイトへようこそ、私はラオワンです。&lt;/p&gt;
+&lt;p&gt;このサイトは、学習や開発の過程で出会った難しい点や、経験した失敗、そしてその解決方法を記録するためのものです。皆さんの参考になれば幸いです。&lt;/p&gt;
+&lt;p&gt;普段私が使っているナレッジベースのウェブサイトいくつか：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://bcdh.yuque.com/staff-wpxfif/resource/cz0xv8#OM0Y7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Java Learning Path&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.runoob.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Rookie Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If the knowledge base website is a systematic and comprehensive series of books, then this site is a small and exquisite diary, compared to long articles, sometimes short and concise articles can &amp;lsquo;directly hit&amp;rsquo; the pain points and difficulties in development&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The meaning of the existence of a website is to allow more people to benefit from it, and I hope to contribute to the development of the Internet IT industry&lt;/p&gt;
+&lt;p&gt;If you think this site is not bad, I hope to move &lt;a class=&#34;link&#34; href=&#34;https://github.com/MindaRyn1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github&lt;/a&gt; to order a star🌟 for my project, thank you very much!&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>検索</title>
+        <link>/jp/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/jp/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

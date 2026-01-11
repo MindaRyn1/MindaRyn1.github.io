@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>MindaRyn</title>
+        <link>/en/</link>
+        <description>Recent content on MindaRyn</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>老王同学的技术博客</copyright>
+        <lastBuildDate>Fri, 15 Sep 2023 13:48:38 +0800</lastBuildDate><atom:link href="/en/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Blog</title>
+        <link>/en/p/blog/</link>
+        <pubDate>Fri, 15 Sep 2023 13:48:38 +0800</pubDate>
+        
+        <guid>/en/p/blog/</guid>
+        <description>&lt;h2 id=&#34;first-blog&#34;&gt;first blog
+&lt;/h2&gt;&lt;p&gt;hello,this is my second blog!&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Blog</title>
+        <link>/en/p/blog/</link>
+        <pubDate>Fri, 15 Sep 2023 13:48:38 +0800</pubDate>
+        
+        <guid>/en/p/blog/</guid>
+        <description>&lt;h2 id=&#34;first-blog&#34;&gt;first blog
+&lt;/h2&gt;&lt;p&gt;hello,this is my second blog!&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>/en/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>/en/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>About</title>
+        <link>/en/about/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/en/about/</guid>
+        <description>&lt;p&gt;Hello！ Welcome to poor Station, I am Wang_Taowei&lt;/p&gt;
+&lt;p&gt;This site is used to record the difficulties encountered in learning development, the pits stepped on and the solutions, I hope it can be helpful to you&lt;/p&gt;
+&lt;p&gt;Some knowledge base sites I usually use:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://bcdh.yuque.com/staff-wpxfif/resource/cz0xv8#OM0Y7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Java Learning Path&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.runoob.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Rookie Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If the knowledge base website is a systematic and comprehensive series of books, then this site is a small and exquisite diary, compared to long articles, sometimes short and concise articles can &amp;lsquo;directly hit&amp;rsquo; the pain points and difficulties in development&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The meaning of the existence of a website is to allow more people to benefit from it, and I hope to contribute to the development of the Internet IT industry&lt;/p&gt;
+&lt;p&gt;If you think this site is not bad, I hope to move &lt;a class=&#34;link&#34; href=&#34;https://github.com/MindaRyn1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github&lt;/a&gt; to order a star🌟 for my project, thank you very much!&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Link</title>
+        <link>/en/link/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/en/link/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>/en/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/en/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>操作系统 on 老王同学</title>
+        <link>/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
+        <description>Recent content in 操作系统 on 老王同学</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>老王同学的技术博客</copyright>
+        <lastBuildDate>Tue, 10 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>操作系统</title>
+        <link>/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
+        <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</guid>
+        <description>&lt;h2 id=&#34;操作系统的基本原理&#34;&gt;操作系统的基本原理
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image.png&#34;
+	width=&#34;794&#34;
+	height=&#34;475&#34;
+	srcset=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image_hu_e48c06c0c1c7172a.png 480w, /p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image_hu_a815a43a96ae9b27.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;401px&#34;
+	
+&gt;
+操作系统可以看作是人机交互的接口&lt;/p&gt;
+&lt;h2 id=&#34;进程的状态&#34;&gt;进程的状态
+&lt;/h2&gt;&lt;div style=&#34;column-count: 2&#34;&gt;
+等待态：没有充足资源，没有 CPU 资源&lt;/br&gt;
+就绪态：资源充足+缺 CPU&lt;/br&gt;
+运行态：资源充足+CPU 资源&lt;/br&gt;
+&lt;p&gt;活跃阻塞=等待态 &lt;/br&gt;
+静止阻塞:都缺，但人为挂起 &lt;/br&gt;
+静止就绪: 不缺资源，但人为挂起&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-1.png&#34;
+	width=&#34;808&#34;
+	height=&#34;360&#34;
+	srcset=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-1_hu_8f83b5f537041cc8.png 480w, /p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-1_hu_52fd92dfbc73420a.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;224&#34;
+		data-flex-basis=&#34;538px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;pv-操作&#34;&gt;PV 操作
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-3.png&#34;
+	width=&#34;754&#34;
+	height=&#34;458&#34;
+	srcset=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-3_hu_d8755f89f15db2d6.png 480w, /p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-3_hu_1fcf2abdeede4684.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;164&#34;
+		data-flex-basis=&#34;395px&#34;
+	
+&gt;
+加入 pv 操作：并发进程操作时加阻塞防止溢出&lt;/p&gt;
+&lt;h2 id=&#34;死锁&#34;&gt;死锁
+&lt;/h2&gt;&lt;p&gt;系统在某个时刻所有的可用的资源都分配出去，所有的进程都等待着其他进程放资源而阻塞，造成死锁&lt;/p&gt;
+&lt;h2 id=&#34;索引文件结构&#34;&gt;索引文件结构
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-2.png&#34;
+	width=&#34;612&#34;
+	height=&#34;399&#34;
+	srcset=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-2_hu_4153f4460cc5192f.png 480w, /p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-2_hu_a2831ddf1a3ee0ac.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;文件结构&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;153&#34;
+		data-flex-basis=&#34;368px&#34;
+	
+&gt;
+直接索引：4k* 10&lt;/br&gt;
+1 级间接索引：4k* 1024&lt;/br&gt;
+2 级间接索引：4k* 1024&lt;sup&gt;2&lt;/sup&gt;&lt;/br&gt;
+3 级间接索引：4k* 1024&lt;sup&gt;3&lt;/sup&gt;&lt;/br&gt;
+间接的级别越高，访问效率越低&lt;/p&gt;
+&lt;h2 id=&#34;数据传输方式&#34;&gt;数据传输方式
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;是指内存和外设之间的数据传输问题&lt;/strong&gt;
+&lt;img src=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-4.png&#34;
+	width=&#34;793&#34;
+	height=&#34;407&#34;
+	srcset=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-4_hu_b0a6e5b1b3e355db.png 480w, /p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-4_hu_fc6af7946abf6213.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;194&#34;
+		data-flex-basis=&#34;467px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;程序控制方式&lt;/strong&gt; 最低级也是 CPU 介入最多的方式，外设处于被动，由 CPU 发出查询指令，查询是否传输成功&lt;/br&gt;
+&lt;strong&gt;程序中断方式&lt;/strong&gt;当完成传输时，会产生中断，提高效率&lt;/br&gt;
+&lt;strong&gt;DMA 方式&lt;/strong&gt; 直接存取控制，有 DMA 控制器控制外设与内存的数据传输&lt;/p&gt;
+&lt;h2 id=&#34;微内核&#34;&gt;微内核
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-5.png&#34;
+	width=&#34;829&#34;
+	height=&#34;480&#34;
+	srcset=&#34;/p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-5_hu_5befaa1a1b84c641.png 480w, /p/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/image-5_hu_435c402f1a9afd.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;172&#34;
+		data-flex-basis=&#34;414px&#34;
+	
+&gt;
+&lt;strong&gt;单体内核&lt;/strong&gt; 减少系统开销，但系统庞大，占用资源多，系统稳定性差&lt;/br&gt;
+&lt;strong&gt;微内核&lt;/strong&gt; 内核精炼，便于移植，系统可靠性，安全性和稳定性高，可用于分布式系统，因需要频繁切换内核和用户态，效率相对较低。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

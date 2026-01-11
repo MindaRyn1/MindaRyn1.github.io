@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>计算机结构 on 老王同学</title>
+        <link>/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/</link>
+        <description>Recent content in 计算机结构 on 老王同学</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>老王同学的技术博客</copyright>
+        <lastBuildDate>Tue, 10 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>计算机结构</title>
+        <link>/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/</link>
+        <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/</guid>
+        <description>&lt;h2 id=&#34;cpu-结构&#34;&gt;CPU 结构
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/01.png&#34;
+	width=&#34;859&#34;
+	height=&#34;413&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/01_hu_72fd171b9f54100c.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/01_hu_63c5c5cb86f695ca.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;cpu 结构&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;207&#34;
+		data-flex-basis=&#34;499px&#34;
+	
+&gt;
+CPU 组成：由运算器、控制器、寄存器组（读取速度最快）、内部总线组成&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;运算器组成&#34;&gt;运算器组成:
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;算数逻辑单元 ALU(Arithmetic logic unit):&lt;/strong&gt; &lt;br&gt;
+实现对数据的算数和逻辑运算&lt;br&gt;
+&lt;strong&gt;累加寄存器 AC(Accumulator):&lt;/strong&gt; &lt;br&gt;
+提供数据并暂存运算结果&lt;br&gt;
+&lt;strong&gt;数据缓冲寄存器 DR(Data Register):&lt;/strong&gt; &lt;br&gt;
+作为 CPU 和内存、外设之间数据传送的中转站，暂时存放内存的指令或数据&lt;br&gt;
+&lt;strong&gt;状态条件寄存器 PSW(Program Status Word):&lt;/strong&gt; &lt;br&gt;
+保存指令运行结果相关的标志位，如中断或进位等标志&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;控制器&#34;&gt;控制器
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;指令寄存器 IR （ Instruction Register ） :&lt;/strong&gt; &lt;br&gt;
+暂存当前 CPU 正在执行的指令【操作码和地址码在这里存储】对于用户是透明的&lt;br&gt;
+&lt;strong&gt;程序计数器 PC （ Program Counter ）：&lt;/strong&gt; &lt;br&gt; 用于存放下一条指令的地址&lt;br&gt;
+&lt;strong&gt;地址寄存器 AR （ Address Register ）：&lt;/strong&gt; &lt;br&gt; 保存当前 CPU 所访问的内存地址&lt;br&gt;
+&lt;strong&gt;指令译码器 ID （ Instruction Decoder）：&lt;/strong&gt; &lt;br&gt; 分析指令操作码&lt;/p&gt;
+&lt;h2 id=&#34;计算机体系结构分类flynn&#34;&gt;计算机体系结构分类&amp;ndash;Flynn
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/02.png&#34;
+	width=&#34;774&#34;
+	height=&#34;477&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/02_hu_e6c92abd7e19ab20.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/02_hu_86bd54e6aa3db548.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;体系&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;162&#34;
+		data-flex-basis=&#34;389px&#34;
+	
+&gt;
+&lt;strong&gt;SISD&lt;/strong&gt; 单片机 &lt;br&gt;
+&lt;strong&gt;SIMD&lt;/strong&gt; 并行，阵列处理（对数组操作）&lt;br&gt;
+&lt;strong&gt;MISD&lt;/strong&gt; 理论模型 &lt;br&gt;
+&lt;strong&gt;MIMD&lt;/strong&gt; 个人 pc，计算机系统&lt;/p&gt;
+&lt;h2 id=&#34;cisc-与-risc&#34;&gt;CISC 与 RISC
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/03.png&#34;
+	width=&#34;855&#34;
+	height=&#34;288&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/03_hu_4acd78cf59e63e2b.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/03_hu_1f7a0423b054a4d2.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;296&#34;
+		data-flex-basis=&#34;712px&#34;
+	
+&gt;
+&lt;strong&gt;CISC&lt;/strong&gt; 计算机不发达时期的产物，指令多，复杂
+&lt;strong&gt;RISC&lt;/strong&gt; 现代计算机，指令少，复杂度低，引入了寄存器，效率高&lt;/p&gt;
+&lt;h2 id=&#34;存储结构&#34;&gt;存储结构
+&lt;/h2&gt;&lt;h3 id=&#34;计算机层次存储结构&#34;&gt;计算机层次存储结构
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/06.png&#34;
+	width=&#34;710&#34;
+	height=&#34;379&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/06_hu_78bf8929bc070c77.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/06_hu_1e44c1fc4aee9e66.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;存储结构&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;187&#34;
+		data-flex-basis=&#34;449px&#34;
+	
+&gt;
+引入&lt;strong&gt;cache&lt;/strong&gt;的原因：存在局部性原理 Cache 和 CPU 交互反交互的时候，暂停和内存的交互，速度就会很快。引入 cache 在提高速度的同时，也没有增加多少成本&lt;/br&gt;
+&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/07.png&#34;
+	width=&#34;774&#34;
+	height=&#34;208&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/07_hu_e68d02307aebcc09.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/07_hu_9ad26545bb41ea20.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;cache&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;372&#34;
+		data-flex-basis=&#34;893px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;局部性原理&#34;&gt;局部性原理
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;时间局部性:刚刚访问完数据又立即访问，不需要等待。&lt;/li&gt;
+&lt;li&gt;空间局部性:例如数组的初始化处理，在将数组初始化的过程中，初始化完这一个位置后立即去初始化下一个临近的空间。&lt;/li&gt;
+&lt;li&gt;工作集原理:工作即是进程，运行时被频繁访问的页面集合。将这些集合打包放进 Cache 里面去，就不需要频繁的替换掉。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;主存储器&#34;&gt;主存储器
+&lt;/h3&gt;&lt;h4 id=&#34;主存的分类&#34;&gt;主存的分类
+&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;随机存取存储器：&lt;/strong&gt; DRAM 动态 RAM,SRAM 静态 RAM（断电后无法写入保存数据）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;只读存储器：&lt;/strong&gt; MROM,PROM,EPROM,flash memory（断电后依然可以写入保存数据）&lt;/p&gt;
+&lt;h3 id=&#34;磁盘工作原理&#34;&gt;磁盘工作原理
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/09.png&#34;
+	width=&#34;714&#34;
+	height=&#34;345&#34;
+	srcset=&#34;/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/09_hu_4d22fffcc5d337c4.png 480w, /p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/09_hu_1ea698f54ea872a9.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;磁盘&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;206&#34;
+		data-flex-basis=&#34;496px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;总线系统&#34;&gt;总线系统
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;内部总线&lt;/strong&gt;&lt;/br&gt;
+通常是指微机内部的，外部芯片与处理器之间的联系，属于是芯片级别的总线&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;系统总线&lt;/strong&gt;&lt;/br&gt;
+属于是微机中各个插件板与系统之间的总线，属于是插件板级别的总线，如 PCI，VGA
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;数据总线&lt;/strong&gt;:是用来传输数据的，比如说计算机的 32 位和 64 位，说明了系统总线的宽度就是这么个位数，那么一个周期能够传输的数据是 32164bit。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;地址总线&lt;/strong&gt;:若地址总线的位数是 32 位，那么它代表的地址总线宽度为 2^32，即 4G。因此操作系统是 32 位的，那么他能管理的内存最多是 4g，当然也有硬件有一定关系。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;控制总线&lt;/strong&gt;: 发送相应的控制信号的总线。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;外部总线&lt;/strong&gt;&lt;/br&gt;
+属于是外部设备的总线。&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
