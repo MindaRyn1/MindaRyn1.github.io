@@ -146,7 +146,65 @@
         <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
         
         <guid>/p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</guid>
-        <description>&lt;img src="/p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/02.png" alt="Featured image of post JetBrains系列软件的使用心得" /&gt;&lt;h2 id=&#34;常用快捷键&#34;&gt;常用快捷键
+        <description>&lt;img src="/p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/02.png" alt="Featured image of post JetBrains系列软件的使用心得" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;JetBrains 是一家专注于开发者工具的公司，旗下产品基于自研的 IntelliJ Platform 内核，覆盖了绝大多数主流编程语言和开发场景，可分为 全栈 / 多语言 IDE、单一语言专用 IDE、辅助开发工具 三大类。&lt;br&gt;
+JetBrains官网 &lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.jetbrains.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;系列软件介绍&#34;&gt;系列软件介绍
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;工具名称&lt;/th&gt;
+          &lt;th&gt;主打语言&lt;/th&gt;
+          &lt;th&gt;核心应用场景&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;IntelliJ IDEA&lt;/td&gt;
+          &lt;td&gt;Java&lt;/td&gt;
+          &lt;td&gt;Java 企业级应用开发、Android 开发、Kotlin 开发、Spring Boot 等&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;PyCharm&lt;/td&gt;
+          &lt;td&gt;Python&lt;/td&gt;
+          &lt;td&gt;数据分析、人工智能、Web 开发（Django/Flask）、自动化脚本&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;WebStorm&lt;/td&gt;
+          &lt;td&gt;前端技术栈&lt;/td&gt;
+          &lt;td&gt;JavaScript/TypeScript、Vue/React/Angular 开发，HTML/CSS 优化，前端工程化&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;GoLand&lt;/td&gt;
+          &lt;td&gt;Go&lt;/td&gt;
+          &lt;td&gt;Go 语言后端开发、云原生（K8s 相关）、微服务&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;PhpStorm&lt;/td&gt;
+          &lt;td&gt;PHP&lt;/td&gt;
+          &lt;td&gt;Laravel/Symfony/Yii 等框架开发，WordPress 插件开发，PHP+MySQL 全栈&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RubyMine&lt;/td&gt;
+          &lt;td&gt;Ruby/Rails&lt;/td&gt;
+          &lt;td&gt;Ruby on Rails 框架开发，Web 应用快速构建&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;CLion&lt;/td&gt;
+          &lt;td&gt;C/C++&lt;/td&gt;
+          &lt;td&gt;跨平台 C/C++ 开发，支持 CMake、Qt 框架、嵌入式开发&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;DataGrip&lt;/td&gt;
+          &lt;td&gt;数据库管理&lt;/td&gt;
+          &lt;td&gt;通用数据库工具，支持 MySQL、PostgreSQL、Oracle、SQL Server 等，可视化操作 + SQL 编辑优化&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;常用快捷键&#34;&gt;常用快捷键
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;&lt;/p&gt;
 &lt;table&gt;
@@ -158,12 +216,16 @@
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
+          &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;E&lt;/nkbd&gt;&lt;/td&gt;
+          &lt;td&gt;查看最近打开的文件&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
           &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;D&lt;/nkbd&gt;&lt;/td&gt;
           &lt;td&gt;复制当前行&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;X&lt;/nkbd&gt;&lt;/td&gt;
-          &lt;td&gt;删除当前行&lt;/td&gt;
+          &lt;td&gt;剪切当前行&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;W&lt;/nkbd&gt;&lt;/td&gt;
@@ -171,7 +233,11 @@
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;O&lt;/nkbd&gt;&lt;/td&gt;
-          &lt;td&gt;重写方法&lt;/td&gt;
+          &lt;td&gt;重写父类方法&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;I&lt;/nkbd&gt;&lt;/td&gt;
+          &lt;td&gt;实现接口方法&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;F7&lt;/nkbd&gt;&lt;/td&gt;
@@ -199,23 +265,19 @@
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;shift+F6&lt;/td&gt;
-          &lt;td&gt;快速更改&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Shift&lt;/nkbd&gt;+&lt;nkbd&gt;F6&lt;/td&gt;
+          &lt;td&gt;更改命名&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;shift+F10&lt;/td&gt;
-          &lt;td&gt;Run&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Shift&lt;/nkbd&gt;+&lt;nkbd&gt;F8&lt;/td&gt;
+          &lt;td&gt;调试时步出（跳出当前方法）&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;shift+F9&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Shift&lt;/nkbd&gt;+&lt;nkbd&gt;F9&lt;/td&gt;
           &lt;td&gt;Debug&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;shift+F11&lt;/td&gt;
-          &lt;td&gt;弹出书签显示层&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shift+Tab&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Shift&lt;/nkbd&gt;+&lt;nkbd&gt;Tab&lt;/td&gt;
           &lt;td&gt;取消缩进&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
@@ -232,31 +294,27 @@
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;ctrl+Alt+L&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;Alt&lt;/nkbd&gt;+&lt;nkbd&gt;L&lt;/td&gt;
           &lt;td&gt;格式化代码&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;ctrl+Alt+v&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;Alt&lt;/nkbd&gt;+&lt;nkbd&gt;V&lt;/nkbd&gt;&lt;/td&gt;
           &lt;td&gt;引入变量&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;ctrl+Alt+t&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;Alt&lt;/nkbd&gt;+&lt;nkbd&gt;T&lt;/nkbd&gt;&lt;/td&gt;
           &lt;td&gt;Surround With 快捷键&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;ctrl+Alt+O&lt;/td&gt;
-          &lt;td&gt;优化导入的类，可以对当前文件和整个包目录使用&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;Alt&lt;/nkbd&gt;+&lt;nkbd&gt;S&lt;/nkbd&gt;&lt;/td&gt;
+          &lt;td&gt;打开系统设置&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;ctrl+Alt+S&lt;/td&gt;
-          &lt;td&gt;打开 IDEA 系统设置&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;ctrl+Alt+Enter&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;Alt&lt;/nkbd&gt;+&lt;nkbd&gt;Enter&lt;/nkbd&gt;&lt;/td&gt;
           &lt;td&gt;光标所在行上空出一行，光标定位到新行&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;ctrl+Alt+←/→&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;Alt&lt;/nkbd&gt;+&lt;nkbd&gt;←&lt;/nkbd&gt;/&lt;nkbd&gt;→&lt;/nkbd&gt;&lt;/td&gt;
           &lt;td&gt;退回/前进到上一个操作的地方&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
@@ -279,6 +337,10 @@
       &lt;tr&gt;
           &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;Shift&lt;/nkbd&gt;+&lt;nkbd&gt;w&lt;/nkbd&gt;&lt;/td&gt;
           &lt;td&gt;递进式选中代码（从光标处向内扩展）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;Shift&lt;/nkbd&gt;+&lt;nkbd&gt;Enter&lt;/nkbd&gt;&lt;/td&gt;
+          &lt;td&gt;光标所在行下空出一行，光标定位到新行&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;Shift&lt;/nkbd&gt;+&lt;nkbd&gt;↑&lt;/nkbd&gt;/&lt;nkbd&gt;↓&lt;/nkbd&gt;&lt;/td&gt;
@@ -329,12 +391,17 @@
           &lt;td&gt;&lt;nkbd&gt;F9&lt;/nkbd&gt;&lt;/td&gt;
           &lt;td&gt;调试时继续执行到下一个断点&lt;/td&gt;
       &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;nkbd&gt;Alt&lt;/nkbd&gt;+&lt;nkbd&gt;F7&lt;/nkbd&gt;&lt;/td&gt;
+          &lt;td&gt;查看当前方法的调用者&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;nkbd&gt;Alt&lt;/nkbd&gt;+&lt;nkbd&gt;Ins&lt;/nkbd&gt;&lt;/td&gt;
+          &lt;td&gt;打开生成菜单（可生成 getter/setter、构造方法、重写方法等）&lt;/td&gt;
+      &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;jetbrains-系列软件的常见图标&#34;&gt;JetBrains 系列软件的常见图标
-&lt;/h2&gt;&lt;p&gt;图标地址 &lt;a class=&#34;link&#34; href=&#34;https://intellij-icons.jetbrains.design/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://intellij-icons.jetbrains.design/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;插件推荐&#34;&gt;插件推荐
 &lt;/h2&gt;&lt;table&gt;
   &lt;thead&gt;
@@ -362,7 +429,7 @@
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;AI assistant&lt;/td&gt;
-          &lt;td&gt;因为插件类型还是以QA为主，所以随便选一家的即可 我一直用的是阿里的 LingMa&lt;/td&gt;
+          &lt;td&gt;因为插件类型的AI还是以QA为主，所以随便选一家的即可 我一直用的是阿里的 LingMa&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;Nyan Progress Bar&lt;/td&gt;
@@ -370,6 +437,22 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;h2 id=&#34;小技巧&#34;&gt;小技巧
+&lt;/h2&gt;&lt;p&gt;搜索栏 正则表达式
+如图：
+&lt;img src=&#34;/p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/03.png&#34;
+	width=&#34;351&#34;
+	height=&#34;267&#34;
+	srcset=&#34;/p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/03_hu_b5616743ef55fde5.png 480w, /p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/03_hu_71be2f6a1f243106.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;131&#34;
+		data-flex-basis=&#34;315px&#34;
+	
+&gt;
+当我想搜索 领取xx奖励,可以在搜索栏 按下 alt+x 开启正则表达式 并输入(.*)表示此处可以有任意字符。&lt;/p&gt;
 </description>
         </item>
         

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>开发工具 on 老王同学</title>
+        <link>/categories/software/</link>
+        <description>Recent content in 开发工具 on 老王同学</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>老王同学的技术博客</copyright><atom:link href="/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    </channel>
+</rss>

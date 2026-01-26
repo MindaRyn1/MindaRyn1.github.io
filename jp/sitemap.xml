@@ -3,6 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/jp/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -19,21 +20,56 @@
                 href="/jp/"
                 />
   </url><url>
-    <loc>/jp/about/</loc>
+    <loc>/jp/post/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/about/"
+                href="/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="jp"
-                href="/jp/about/"
+                href="/jp/post/"
+                />
+  </url><url>
+    <loc>/jp/p/%E6%97%A5%E8%AF%AD/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/jp/page/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/page/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/page/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="jp"
+                href="/jp/page/"
+                />
+  </url><url>
+    <loc>/jp/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="jp"
+                href="/jp/archives/"
                 />
   </url><url>
     <loc>/jp/categories/</loc>
@@ -53,23 +89,6 @@
                 href="/jp/categories/"
                 />
   </url><url>
-    <loc>/jp/page/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="/page/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/page/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="jp"
-                href="/jp/page/"
-                />
-  </url><url>
     <loc>/jp/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -87,6 +106,40 @@
                 href="/jp/tags/"
                 />
   </url><url>
+    <loc>/jp/links/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/links/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/links/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="jp"
+                href="/jp/links/"
+                />
+  </url><url>
+    <loc>/jp/%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E9%96%8B%E7%99%BA%E6%97%A5%E8%AA%8C%E3%82%B2%E3%82%B9%E3%83%88%E3%83%96%E3%83%83%E3%82%AF/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E6%97%A5%E8%AE%B0%E7%95%99%E8%A8%80%E6%9D%BF/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/website-development-journal-guestbook/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="jp"
+                href="/jp/%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E9%96%8B%E7%99%BA%E6%97%A5%E8%AA%8C%E3%82%B2%E3%82%B9%E3%83%88%E3%83%96%E3%83%83%E3%82%AF/"
+                />
+  </url><url>
     <loc>/jp/search/</loc>
     <xhtml:link
                 rel="alternate"
@@ -102,6 +155,23 @@
                 rel="alternate"
                 hreflang="jp"
                 href="/jp/search/"
+                />
+  </url><url>
+    <loc>/jp/%E7%A7%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="jp"
+                href="/jp/%E7%A7%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/"
                 />
   </url>
 </urlset>

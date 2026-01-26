@@ -1,0 +1,823 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>五十音假名测试: 快速简单学习平假名和片假名</title>
+  <meta name="description" content="随机出题，输入罗马音练习平假名/片假名；统计正确率、错题回顾、可选题库范围。" />
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#111a33;
+      --muted:#9fb0d0;
+      --text:#e8eeff;
+      --accent:#5eead4;
+      --accent2:#60a5fa;
+      --danger:#fb7185;
+      --ok:#34d399;
+      --line:rgba(255,255,255,.10);
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      background:
+        radial-gradient(1200px 600px at 15% 10%, rgba(96,165,250,.18), transparent 60%),
+        radial-gradient(900px 500px at 80% 20%, rgba(94,234,212,.14), transparent 55%),
+        radial-gradient(1000px 700px at 50% 100%, rgba(251,113,133,.10), transparent 60%),
+        var(--bg);
+      color:var(--text);
+      min-height:100vh;
+    }
+    a{color:inherit}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px 16px 48px}
+    header{
+      display:flex;align-items:flex-start;justify-content:space-between;gap:16px;
+      margin:10px 0 18px;
+    }
+    .title h1{
+      margin:0 0 6px;
+      font-size: clamp(20px, 3.2vw, 30px);
+      letter-spacing:.2px;
+    }
+    .title p{margin:0;color:var(--muted);font-size:14px}
+    .pillbar{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+    .pill{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      color:var(--muted);
+      padding:8px 10px;border-radius:999px;
+      font-size:12px;display:flex;align-items:center;gap:8px;
+    }
+    .dot{width:8px;height:8px;border-radius:99px;background:var(--accent)}
+    main{display:grid;grid-template-columns: 1.2fr .8fr;gap:16px}
+    @media (max-width: 920px){ main{grid-template-columns:1fr} }
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .card .hd{
+      padding:14px 16px;
+      display:flex;align-items:center;justify-content:space-between;gap:12px;
+      border-bottom:1px solid var(--line);
+      background:rgba(0,0,0,.12);
+    }
+    .card .hd h2{margin:0;font-size:14px;color:var(--muted);font-weight:600;letter-spacing:.2px}
+    .card .bd{padding:16px}
+    .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .sp{justify-content:space-between}
+    .btn{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.05);
+      color:var(--text);
+      padding:10px 12px;
+      border-radius:12px;
+      cursor:pointer;
+      font-size:13px;
+      transition: transform .06s ease, background .15s ease, border-color .15s ease;
+      user-select:none;
+    }
+    .btn:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.16)}
+    .btn:active{transform:translateY(1px)}
+    .btn.primary{
+      border-color:rgba(94,234,212,.35);
+      background:rgba(94,234,212,.10);
+    }
+    .btn.danger{
+      border-color:rgba(251,113,133,.35);
+      background:rgba(251,113,133,.10);
+    }
+    .btn.tiny{padding:7px 10px;border-radius:10px;font-size:12px}
+    .seg{
+      display:flex;border:1px solid var(--line);border-radius:12px;overflow:hidden;
+      background:rgba(0,0,0,.10)
+    }
+    .seg button{
+      border:0;background:transparent;color:var(--muted);
+      padding:9px 10px;cursor:pointer;font-size:13px;min-width:90px;
+    }
+    .seg button.on{background:rgba(96,165,250,.14);color:var(--text)}
+    .prompt{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:12px;
+      padding:18px 16px 16px;
+      text-align:center;
+    }
+    .kana{
+      font-size: clamp(64px, 10vw, 120px);
+      line-height:1;
+      letter-spacing:2px;
+      font-weight:700;
+      text-shadow: 0 20px 60px rgba(0,0,0,.35);
+    }
+    .sub{
+      color:var(--muted);
+      font-size:14px;
+      margin-top:2px;
+    }
+    .inbar{
+      display:flex;gap:10px;justify-content:center;flex-wrap:wrap;
+      align-items:center;
+      margin-top:6px;
+    }
+    input[type="text"]{
+      width:min(420px, 92vw);
+      padding:12px 14px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(0,0,0,.25);
+      color:var(--text);
+      outline:none;
+      font-size:15px;
+    }
+    input[type="text"]:focus{
+      border-color:rgba(96,165,250,.55);
+      box-shadow: 0 0 0 3px rgba(96,165,250,.18);
+    }
+    .hint{
+      font-family:var(--mono);
+      font-size:12px;
+      color:var(--muted);
+      margin-top:10px;
+      display:flex;gap:10px;justify-content:center;flex-wrap:wrap;
+    }
+    .badge{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      padding:4px 8px;border-radius:999px;
+    }
+    .result{
+      margin:14px auto 0;
+      display:inline-flex;
+      gap:10px;align-items:center;justify-content:center;
+      border:1px solid var(--line);
+      background:rgba(0,0,0,.18);
+      padding:10px 12px;border-radius:14px;
+      max-width: 95%;
+    }
+    .result .tag{
+      font-size:12px;color:var(--muted);
+      border:1px solid var(--line);
+      padding:4px 8px;border-radius:999px;
+      background:rgba(255,255,255,.03);
+    }
+    .result.ok{border-color:rgba(52,211,153,.35)}
+    .result.bad{border-color:rgba(251,113,133,.35)}
+    .result .msg{font-size:14px}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    @media (max-width:520px){ .grid2{grid-template-columns:1fr} }
+    .stat{
+      padding:12px 12px;border:1px solid var(--line);
+      border-radius:14px;background:rgba(0,0,0,.12)
+    }
+    .stat .k{color:var(--muted);font-size:12px}
+    .stat .v{font-size:18px;margin-top:4px;font-family:var(--mono)}
+    .list{
+      display:flex;flex-direction:column;gap:8px;
+      max-height: 310px; overflow:auto; padding-right:6px;
+    }
+    .item{
+      display:flex;align-items:center;justify-content:space-between;gap:10px;
+      border:1px solid var(--line);border-radius:14px;
+      background:rgba(0,0,0,.14);
+      padding:10px 12px;
+    }
+    .left{
+      display:flex;align-items:center;gap:10px;min-width:0;
+    }
+    .chip{
+      font-family:var(--mono);
+      padding:4px 8px;border-radius:10px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      flex:0 0 auto;
+    }
+    .desc{
+      min-width:0;
+      color:var(--muted);font-size:12px;
+      white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+    }
+    .right{
+      display:flex;align-items:center;gap:8px;flex:0 0 auto;
+      font-family:var(--mono);font-size:12px;color:var(--muted)
+    }
+    .oktxt{color:var(--ok)}
+    .badtxt{color:var(--danger)}
+    details{border-top:1px solid var(--line);margin-top:14px}
+    summary{cursor:pointer;padding:12px 2px;color:var(--muted);outline:none}
+    .note{color:var(--muted);font-size:13px;line-height:1.7}
+    footer{
+      margin-top:18px;
+      color:var(--muted);
+      font-size:12px;
+      display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;
+      opacity:.9
+    }
+    .kbd{font-family:var(--mono);border:1px solid var(--line);padding:2px 6px;border-radius:8px;background:rgba(0,0,0,.18)}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="title">
+        <h1>五十音假名测试</h1>
+        <p>快速、简单地练习平假名与片假名（支持错题本 / 统计 / 题库范围）</p>
+      </div>
+      <div class="pillbar">
+        <div class="pill"><span class="dot"></span><span id="modeLabel">模式：混合</span></div>
+        <div class="pill"><span class="dot" style="background:var(--accent2)"></span><span id="poolLabel">题库：清音+浊音+拗音</span></div>
+        <div class="pill"><span class="dot" style="background:var(--danger)"></span><span class="kbd">Enter</span> 判定　<span class="kbd">N</span> 下一题</div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Quiz -->
+      <section class="card">
+        <div class="hd">
+          <h2>练习</h2>
+          <div class="row">
+            <div class="seg" role="tablist" aria-label="mode">
+              <button id="mMix" class="on" type="button">混合</button>
+              <button id="mHira" type="button">平假名</button>
+              <button id="mKata" type="button">片假名</button>
+            </div>
+            <button id="btnNext" class="btn primary" type="button">下一题</button>
+          </div>
+        </div>
+
+        <div class="prompt">
+          <div>
+            <div id="kana" class="kana">あ</div>
+            <div id="kanaMeta" class="sub">请输入对应罗马音</div>
+          </div>
+
+          <div class="inbar">
+            <input id="answer" type="text" inputmode="latin" autocomplete="off" spellcheck="false"
+                   placeholder="例如：a / shi / kyo ..." />
+            <button id="btnCheck" class="btn" type="button">判定</button>
+            <button id="btnReveal" class="btn" type="button">显示答案</button>
+          </div>
+
+          <div class="hint">
+            <span class="badge">支持同义：<span style="color:var(--text)">shi/si、chi/ti、tsu/tu、fu/hu、ji/zi、jya/ja...</span></span>
+            <span class="badge">输入后按 <span class="kbd">Enter</span> 判定</span>
+            <span class="badge">按 <span class="kbd">N</span> 下一题</span>
+          </div>
+
+          <div id="result" class="result" style="display:none">
+            <span id="resTag" class="tag">OK</span>
+            <span id="resMsg" class="msg"></span>
+          </div>
+
+          <details>
+            <summary>设置 / 题库范围</summary>
+            <div class="bd" style="padding:0 0 12px">
+              <div class="grid2" style="margin-top:6px">
+                <div class="stat">
+                  <div class="k">题库范围</div>
+                  <div class="row" style="margin-top:8px;gap:8px">
+                    <button class="btn tiny" id="pBasic" type="button">仅清音</button>
+                    <button class="btn tiny" id="pDaku" type="button">+ 浊音/半浊音</button>
+                    <button class="btn tiny" id="pYoon" type="button">+ 拗音</button>
+                  </div>
+                  <div class="note" style="margin-top:8px">默认：清音 + 浊音/半浊音 + 拗音（含 きゃ/キャ 等）。</div>
+                </div>
+
+                <div class="stat">
+                  <div class="k">操作</div>
+                  <div class="row" style="margin-top:8px;gap:8px">
+                    <button class="btn tiny danger" id="btnReset" type="button">清空统计</button>
+                    <button class="btn tiny" id="btnExport" type="button">导出错题 (JSON)</button>
+                    <button class="btn tiny" id="btnImport" type="button">导入错题</button>
+                    <input id="fileImport" type="file" accept="application/json" style="display:none" />
+                  </div>
+                  <div class="note" style="margin-top:8px">统计与错题会保存在本地（localStorage）。</div>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <div class="bd" style="padding-top:0">
+          <div class="grid2">
+            <div class="stat">
+              <div class="k">总题数</div>
+              <div id="stTotal" class="v">0</div>
+            </div>
+            <div class="stat">
+              <div class="k">正确率</div>
+              <div id="stAcc" class="v">0.0%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats / Wrong Book -->
+      <aside class="card">
+        <div class="hd">
+          <h2>错题本</h2>
+          <div class="row">
+            <button id="btnOnlyWrong" class="btn tiny" type="button">只看错题</button>
+            <button id="btnAllHistory" class="btn tiny" type="button">全部记录</button>
+          </div>
+        </div>
+        <div class="bd">
+          <div class="grid2">
+            <div class="stat">
+              <div class="k">正确</div>
+              <div id="stOk" class="v">0</div>
+            </div>
+            <div class="stat">
+              <div class="k">错误</div>
+              <div id="stBad" class="v">0</div>
+            </div>
+          </div>
+
+          <div class="note" style="margin-top:10px">
+            提示：点一条记录会把该假名重新出题（便于复习）。
+          </div>
+
+          <div id="history" class="list" style="margin-top:10px"></div>
+
+          <details style="margin-top:12px">
+            <summary>什么是假名（同款说明区块）</summary>
+            <div class="note" style="padding:2px 2px 12px">
+              <p style="margin:0 0 8px">
+                假名，日语的表音文字。“假”即“借”，“名”即“字”。意即只借用汉字的音和形，而不用它的意义，所以叫“假名(kana)”。
+                值得注意的是，假名的假字不是表示假冒、虚假、非真的意思，因此日语中没有所谓的“真名”。
+              </p>
+              <p style="margin:0">
+                假名主要分为“平假名”和“片假名”两种。平假名源于汉字草书，正式使用约从公元九世纪起；
+                片假名源于汉字楷书，正式使用约从公元十世纪起。
+              </p>
+              <p style="margin:10px 0 0;opacity:.85">© Learn Kano 2019</p>
+            </div>
+          </details>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>本页为“复刻版单文件实现”（离线可用）。</div>
+      <div>快捷键：<span class="kbd">Enter</span> 判定　<span class="kbd">N</span> 下一题　<span class="kbd">/</span> 聚焦输入框</div>
+    </footer>
+  </div>
+
+<script>
+/**
+ * 单文件五十音练习器（平/片假名 + 清音/浊音/拗音）
+ * - 同义罗马音容错（shi/si 等）
+ * - 统计、历史记录、错题本（localStorage）
+ * - 导入/导出错题
+ */
+
+const LS_KEY = "kana_practice_v1";
+
+const normalizeRomaji = (s) => {
+  s = (s || "").trim().toLowerCase();
+  // 常见替代写法归一化
+  const map = new Map([
+    ["si","shi"],["ti","chi"],["tu","tsu"],["hu","fu"],
+    ["zi","ji"],["di","ji"], // 常见输入法/教材差异（这里合并到 ji）
+    ["sya","sha"],["syu","shu"],["syo","sho"],
+    ["tya","cha"],["tyu","chu"],["tyo","cho"],
+    ["zya","ja"],["zyu","ju"],["zyo","jo"],
+    ["jya","ja"],["jyu","ju"],["jyo","jo"],
+    ["cya","cha"],["cyu","chu"],["cyo","cho"],
+    ["she","sye"], // 允许少量扩展写法
+  ]);
+  // 把长音符号等去掉（本题库不含）
+  s = s.replace(/[^a-z]/g,"");
+  // 逐词替换（仅对整个字符串）
+  if(map.has(s)) return map.get(s);
+  // 小促音 double consonant 常见误写不做强行纠正（避免误判）
+  return s;
+};
+
+// 题库：每项可包含多个可接受答案
+// basic: 清音（五十音 + ん）
+const BASIC = [
+  // a
+  {h:"あ",k:"ア",a:["a"]},{h:"い",k:"イ",a:["i"]},{h:"う",k:"ウ",a:["u"]},{h:"え",k:"エ",a:["e"]},{h:"お",k:"オ",a:["o"]},
+  // k
+  {h:"か",k:"カ",a:["ka"]},{h:"き",k:"キ",a:["ki"]},{h:"く",k:"ク",a:["ku"]},{h:"け",k:"ケ",a:["ke"]},{h:"こ",k:"コ",a:["ko"]},
+  // s
+  {h:"さ",k:"サ",a:["sa"]},{h:"し",k:"シ",a:["shi","si"]},{h:"す",k:"ス",a:["su"]},{h:"せ",k:"セ",a:["se"]},{h:"そ",k:"ソ",a:["so"]},
+  // t
+  {h:"た",k:"タ",a:["ta"]},{h:"ち",k:"チ",a:["chi","ti"]},{h:"つ",k:"ツ",a:["tsu","tu"]},{h:"て",k:"テ",a:["te"]},{h:"と",k:"ト",a:["to"]},
+  // n
+  {h:"な",k:"ナ",a:["na"]},{h:"に",k:"ニ",a:["ni"]},{h:"ぬ",k:"ヌ",a:["nu"]},{h:"ね",k:"ネ",a:["ne"]},{h:"の",k:"ノ",a:["no"]},
+  // h
+  {h:"は",k:"ハ",a:["ha"]},{h:"ひ",k:"ヒ",a:["hi"]},{h:"ふ",k:"フ",a:["fu","hu"]},{h:"へ",k:"ヘ",a:["he"]},{h:"ほ",k:"ホ",a:["ho"]},
+  // m
+  {h:"ま",k:"マ",a:["ma"]},{h:"み",k:"ミ",a:["mi"]},{h:"む",k:"ム",a:["mu"]},{h:"め",k:"メ",a:["me"]},{h:"も",k:"モ",a:["mo"]},
+  // y
+  {h:"や",k:"ヤ",a:["ya"]},{h:"ゆ",k:"ユ",a:["yu"]},{h:"よ",k:"ヨ",a:["yo"]},
+  // r
+  {h:"ら",k:"ラ",a:["ra"]},{h:"り",k:"リ",a:["ri"]},{h:"る",k:"ル",a:["ru"]},{h:"れ",k:"レ",a:["re"]},{h:"ろ",k:"ロ",a:["ro"]},
+  // w + n
+  {h:"わ",k:"ワ",a:["wa"]},{h:"を",k:"ヲ",a:["wo","o"]},
+  {h:"ん",k:"ン",a:["n","nn"]},
+];
+
+// daku: 浊音/半浊音
+const DAKU = [
+  {h:"が",k:"ガ",a:["ga"]},{h:"ぎ",k:"ギ",a:["gi"]},{h:"ぐ",k:"グ",a:["gu"]},{h:"げ",k:"ゲ",a:["ge"]},{h:"ご",k:"ゴ",a:["go"]},
+  {h:"ざ",k:"ザ",a:["za"]},{h:"じ",k:"ジ",a:["ji","zi"]},{h:"ず",k:"ズ",a:["zu"]},{h:"ぜ",k:"ゼ",a:["ze"]},{h:"ぞ",k:"ゾ",a:["zo"]},
+  {h:"だ",k:"ダ",a:["da"]},{h:"ぢ",k:"ヂ",a:["ji","di"]},{h:"づ",k:"ヅ",a:["zu","du"]},{h:"で",k:"デ",a:["de"]},{h:"ど",k:"ド",a:["do"]},
+  {h:"ば",k:"バ",a:["ba"]},{h:"び",k:"ビ",a:["bi"]},{h:"ぶ",k:"ブ",a:["bu"]},{h:"べ",k:"ベ",a:["be"]},{h:"ぼ",k:"ボ",a:["bo"]},
+  {h:"ぱ",k:"パ",a:["pa"]},{h:"ぴ",k:"ピ",a:["pi"]},{h:"ぷ",k:"プ",a:["pu"]},{h:"ぺ",k:"ペ",a:["pe"]},{h:"ぽ",k:"ポ",a:["po"]},
+];
+
+// yoon: 拗音（常用）
+const YOON = [
+  // k
+  {h:"きゃ",k:"キャ",a:["kya"]},{h:"きゅ",k:"キュ",a:["kyu"]},{h:"きょ",k:"キョ",a:["kyo"]},
+  // s/sh
+  {h:"しゃ",k:"シャ",a:["sha","sya"]},{h:"しゅ",k:"シュ",a:["shu","syu"]},{h:"しょ",k:"ショ",a:["sho","syo"]},
+  // t/ch
+  {h:"ちゃ",k:"チャ",a:["cha","tya","cya"]},{h:"ちゅ",k:"チュ",a:["chu","tyu","cyu"]},{h:"ちょ",k:"チョ",a:["cho","tyo","cyo"]},
+  // n
+  {h:"にゃ",k:"ニャ",a:["nya"]},{h:"にゅ",k:"ニュ",a:["nyu"]},{h:"にょ",k:"ニョ",a:["nyo"]},
+  // h
+  {h:"ひゃ",k:"ヒャ",a:["hya"]},{h:"ひゅ",k:"ヒュ",a:["hyu"]},{h:"ひょ",k:"ヒョ",a:["hyo"]},
+  // m
+  {h:"みゃ",k:"ミャ",a:["mya"]},{h:"みゅ",k:"ミュ",a:["myu"]},{h:"みょ",k:"ミョ",a:["myo"]},
+  // r
+  {h:"りゃ",k:"リャ",a:["rya"]},{h:"りゅ",k:"リュ",a:["ryu"]},{h:"りょ",k:"リョ",a:["ryo"]},
+  // g
+  {h:"ぎゃ",k:"ギャ",a:["gya"]},{h:"ぎゅ",k:"ギュ",a:["gyu"]},{h:"ぎょ",k:"ギョ",a:["gyo"]},
+  // j
+  {h:"じゃ",k:"ジャ",a:["ja","jya","zya"]},{h:"じゅ",k:"ジュ",a:["ju","jyu","zyu"]},{h:"じょ",k:"ジョ",a:["jo","jyo","zyo"]},
+  // b / p
+  {h:"びゃ",k:"ビャ",a:["bya"]},{h:"びゅ",k:"ビュ",a:["byu"]},{h:"びょ",k:"ビョ",a:["byo"]},
+  {h:"ぴゃ",k:"ピャ",a:["pya"]},{h:"ぴゅ",k:"ピュ",a:["pyu"]},{h:"ぴょ",k:"ピョ",a:["pyo"]},
+];
+
+const els = {
+  kana: document.getElementById("kana"),
+  kanaMeta: document.getElementById("kanaMeta"),
+  answer: document.getElementById("answer"),
+  btnCheck: document.getElementById("btnCheck"),
+  btnReveal: document.getElementById("btnReveal"),
+  btnNext: document.getElementById("btnNext"),
+  result: document.getElementById("result"),
+  resTag: document.getElementById("resTag"),
+  resMsg: document.getElementById("resMsg"),
+
+  stTotal: document.getElementById("stTotal"),
+  stAcc: document.getElementById("stAcc"),
+  stOk: document.getElementById("stOk"),
+  stBad: document.getElementById("stBad"),
+
+  history: document.getElementById("history"),
+
+  modeLabel: document.getElementById("modeLabel"),
+  poolLabel: document.getElementById("poolLabel"),
+
+  mMix: document.getElementById("mMix"),
+  mHira: document.getElementById("mHira"),
+  mKata: document.getElementById("mKata"),
+
+  pBasic: document.getElementById("pBasic"),
+  pDaku: document.getElementById("pDaku"),
+  pYoon: document.getElementById("pYoon"),
+
+  btnReset: document.getElementById("btnReset"),
+  btnOnlyWrong: document.getElementById("btnOnlyWrong"),
+  btnAllHistory: document.getElementById("btnAllHistory"),
+
+  btnExport: document.getElementById("btnExport"),
+  btnImport: document.getElementById("btnImport"),
+  fileImport: document.getElementById("fileImport"),
+};
+
+const state = {
+  mode: "mix",     // mix | hira | kata
+  pool: "yoon",    // basic | daku | yoon
+  current: null,   // {char, answers[], script}
+  stats: { total:0, ok:0, bad:0 },
+  records: [],     // {t, char, script, input, ok, answers[]}
+  showOnlyWrong: true,
+};
+
+const save = () => {
+  localStorage.setItem(LS_KEY, JSON.stringify({
+    mode: state.mode, pool: state.pool,
+    stats: state.stats, records: state.records,
+    showOnlyWrong: state.showOnlyWrong
+  }));
+};
+
+const load = () => {
+  try{
+    const raw = localStorage.getItem(LS_KEY);
+    if(!raw) return;
+    const v = JSON.parse(raw);
+    if(v?.stats) state.stats = v.stats;
+    if(Array.isArray(v?.records)) state.records = v.records.slice(0, 800);
+    if(v?.mode) state.mode = v.mode;
+    if(v?.pool) state.pool = v.pool;
+    if(typeof v?.showOnlyWrong === "boolean") state.showOnlyWrong = v.showOnlyWrong;
+  }catch(e){}
+};
+
+const poolItems = () => {
+  if(state.pool === "basic") return BASIC.slice();
+  if(state.pool === "daku") return BASIC.concat(DAKU);
+  return BASIC.concat(DAKU).concat(YOON);
+};
+
+const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+const makeQuestion = () => {
+  const items = poolItems();
+  const item = pick(items);
+
+  let script = state.mode;
+  if(script === "mix") script = (Math.random() < 0.5) ? "hira" : "kata";
+
+  const char = script === "hira" ? item.h : item.k;
+  const answers = item.a.map(normalizeRomaji);
+  state.current = { char, answers, script };
+
+  els.kana.textContent = char;
+  els.kanaMeta.textContent = (script === "hira") ? "平假名 · 请输入对应罗马音" : "片假名 · 请输入对应罗马音";
+  els.answer.value = "";
+  els.answer.focus();
+  hideResult();
+};
+
+const formatPoolLabel = () => {
+  if(state.pool === "basic") return "题库：仅清音";
+  if(state.pool === "daku") return "题库：清音+浊音/半浊音";
+  return "题库：清音+浊音/半浊音+拗音";
+};
+
+const formatModeLabel = () => {
+  if(state.mode === "hira") return "模式：平假名";
+  if(state.mode === "kata") return "模式：片假名";
+  return "模式：混合";
+};
+
+const updateTopLabels = () => {
+  els.modeLabel.textContent = formatModeLabel();
+  els.poolLabel.textContent = formatPoolLabel();
+};
+
+const updateModeUI = () => {
+  els.mMix.classList.toggle("on", state.mode === "mix");
+  els.mHira.classList.toggle("on", state.mode === "hira");
+  els.mKata.classList.toggle("on", state.mode === "kata");
+  updateTopLabels();
+};
+
+const flashResult = (ok, msg, answers=[]) => {
+  els.result.style.display = "inline-flex";
+  els.result.classList.toggle("ok", ok);
+  els.result.classList.toggle("bad", !ok);
+  els.resTag.textContent = ok ? "正确" : "错误";
+  els.resMsg.textContent = ok ? msg : `${msg}（答案：${answers.join(" / ")}）`;
+};
+
+const hideResult = () => {
+  els.result.style.display = "none";
+  els.result.classList.remove("ok","bad");
+};
+
+const pushRecord = (rec) => {
+  state.records.unshift(rec);
+  // 控制历史长度
+  if(state.records.length > 300) state.records.length = 300;
+};
+
+const updateStatsUI = () => {
+  const {total, ok, bad} = state.stats;
+  els.stTotal.textContent = String(total);
+  els.stOk.textContent = String(ok);
+  els.stBad.textContent = String(bad);
+  const acc = total ? (ok/total*100) : 0;
+  els.stAcc.textContent = acc.toFixed(1) + "%";
+};
+
+const renderHistory = () => {
+  els.history.innerHTML = "";
+  const rows = state.showOnlyWrong
+    ? state.records.filter(r => !r.ok)
+    : state.records;
+
+  if(rows.length === 0){
+    const empty = document.createElement("div");
+    empty.className = "note";
+    empty.style.padding = "8px 2px";
+    empty.textContent = state.showOnlyWrong ? "暂无错题～" : "暂无记录～";
+    els.history.appendChild(empty);
+    return;
+  }
+
+  rows.slice(0, 120).forEach(r => {
+    const item = document.createElement("div");
+    item.className = "item";
+    item.title = "点击复习该假名";
+
+    const left = document.createElement("div");
+    left.className = "left";
+
+    const chip = document.createElement("div");
+    chip.className = "chip";
+    chip.textContent = r.char;
+
+    const desc = document.createElement("div");
+    desc.className = "desc";
+    const sc = (r.script === "hira") ? "平" : "片";
+    desc.textContent = `${sc} · 输入：${r.input || "（空）"} · 正解：${r.answers.join("/")}`;
+
+    left.appendChild(chip);
+    left.appendChild(desc);
+
+    const right = document.createElement("div");
+    right.className = "right";
+    const time = new Date(r.t);
+    const hh = String(time.getHours()).padStart(2,"0");
+    const mm = String(time.getMinutes()).padStart(2,"0");
+    right.innerHTML = `<span>${hh}:${mm}</span> <span class="${r.ok ? "oktxt":"badtxt"}">${r.ok ? "OK":"×"}</span>`;
+
+    item.appendChild(left);
+    item.appendChild(right);
+
+    item.addEventListener("click", () => {
+      // 直接把该字符作为当前题（保持脚本）
+      state.current = { char: r.char, answers: r.answers.map(normalizeRomaji), script: r.script };
+      els.kana.textContent = r.char;
+      els.kanaMeta.textContent = (r.script === "hira") ? "平假名 · 请输入对应罗马音" : "片假名 · 请输入对应罗马音";
+      els.answer.value = "";
+      els.answer.focus();
+      hideResult();
+    });
+
+    els.history.appendChild(item);
+  });
+};
+
+const check = () => {
+  if(!state.current) return;
+  const inputRaw = els.answer.value;
+  const input = normalizeRomaji(inputRaw);
+  const answers = state.current.answers;
+
+  // 判空：作为错误处理（更贴近练习体验）
+  const ok = input.length > 0 && answers.includes(input);
+
+  state.stats.total += 1;
+  if(ok) state.stats.ok += 1;
+  else state.stats.bad += 1;
+
+  const rec = {
+    t: Date.now(),
+    char: state.current.char,
+    script: state.current.script,
+    input: inputRaw.trim(),
+    ok,
+    answers: answers.slice(),
+  };
+  pushRecord(rec);
+
+  flashResult(ok, ok ? "答对啦！" : "再想想～", answers);
+  updateStatsUI();
+  renderHistory();
+  save();
+};
+
+const reveal = () => {
+  if(!state.current) return;
+  flashResult(false, "提示", state.current.answers);
+};
+
+const setPool = (p) => {
+  state.pool = p;
+  updateTopLabels();
+  save();
+  makeQuestion();
+};
+
+const setMode = (m) => {
+  state.mode = m;
+  updateModeUI();
+  save();
+  makeQuestion();
+};
+
+const resetAll = () => {
+  state.stats = { total:0, ok:0, bad:0 };
+  state.records = [];
+  updateStatsUI();
+  renderHistory();
+  save();
+  makeQuestion();
+};
+
+const downloadJson = (obj, filename) => {
+  const blob = new Blob([JSON.stringify(obj, null, 2)], {type:"application/json"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 500);
+};
+
+// Events
+els.btnCheck.addEventListener("click", check);
+els.btnReveal.addEventListener("click", reveal);
+els.btnNext.addEventListener("click", makeQuestion);
+
+els.mMix.addEventListener("click", () => setMode("mix"));
+els.mHira.addEventListener("click", () => setMode("hira"));
+els.mKata.addEventListener("click", () => setMode("kata"));
+
+els.pBasic.addEventListener("click", () => setPool("basic"));
+els.pDaku.addEventListener("click", () => setPool("daku"));
+els.pYoon.addEventListener("click", () => setPool("yoon"));
+
+els.btnReset.addEventListener("click", resetAll);
+
+els.btnOnlyWrong.addEventListener("click", () => {
+  state.showOnlyWrong = true;
+  renderHistory(); save();
+});
+els.btnAllHistory.addEventListener("click", () => {
+  state.showOnlyWrong = false;
+  renderHistory(); save();
+});
+
+els.btnExport.addEventListener("click", () => {
+  const wrong = state.records.filter(r => !r.ok);
+  downloadJson({ exportedAt: new Date().toISOString(), wrong }, "kana-wrongbook.json");
+});
+
+els.btnImport.addEventListener("click", () => els.fileImport.click());
+els.fileImport.addEventListener("change", async (e) => {
+  const f = e.target.files?.[0];
+  if(!f) return;
+  try{
+    const text = await f.text();
+    const obj = JSON.parse(text);
+    const wrong = Array.isArray(obj?.wrong) ? obj.wrong : [];
+    // 合并：仅合并错题记录
+    const merged = wrong
+      .filter(r => r && r.char && Array.isArray(r.answers))
+      .map(r => ({
+        t: Date.now(),
+        char: String(r.char),
+        script: (r.script === "kata") ? "kata" : "hira",
+        input: "",
+        ok: false,
+        answers: r.answers.map(normalizeRomaji),
+      }));
+    state.records = merged.concat(state.records).slice(0, 300);
+    renderHistory(); save();
+    els.fileImport.value = "";
+  }catch(err){
+    alert("导入失败：不是合法的 JSON 或格式不对。");
+  }
+});
+
+// Keyboard shortcuts
+document.addEventListener("keydown", (e) => {
+  // "/" 聚焦输入框（类似很多网页）
+  if(e.key === "/"){
+    e.preventDefault();
+    els.answer.focus();
+    return;
+  }
+  if(e.key === "Enter"){
+    // 在输入框里 Enter 判定
+    check();
+    return;
+  }
+  if(e.key.toLowerCase() === "n"){
+    makeQuestion();
+    return;
+  }
+});
+
+// Init
+load();
+updateModeUI();
+updateTopLabels();
+updateStatsUI();
+renderHistory();
+makeQuestion();
+</script>
+</body>
+</html>

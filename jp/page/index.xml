@@ -6,12 +6,1566 @@
         <description>Recent content in Pages on MindaRyn</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>jp</language>
-        <copyright>老王同学的技术博客</copyright><atom:link href="/jp/page/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>About</title>
-        <link>/jp/about/</link>
+        <copyright>老王同学的技术博客</copyright>
+        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="/jp/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>アーカイブ</title>
+        <link>/jp/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>/jp/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>ウェブサイトナビゲーション</title>
+        <link>/jp/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>/jp/about/</guid>
+        <guid>/jp/links/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>ウェブサイト開発日誌&amp;ゲストブック</title>
+        <link>/jp/%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E9%96%8B%E7%99%BA%E6%97%A5%E8%AA%8C%E3%82%B2%E3%82%B9%E3%83%88%E3%83%96%E3%83%83%E3%82%AF/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/jp/%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E9%96%8B%E7%99%BA%E6%97%A5%E8%AA%8C%E3%82%B2%E3%82%B9%E3%83%88%E3%83%96%E3%83%83%E3%82%AF/</guid>
+        <description>&lt;p&gt;&lt;div class=&#34;timeline__row&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;
+        &lt;div class=&#34;timeline__time&#34;&gt;2025-12-26&lt;/div&gt;
+        &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;timeline__content&#34;&gt;
+        &lt;div class=&#34;timeline__tags&#34;&gt;
+            &lt;span class=&#34;timeline__tag&#34;&gt;feat&lt;/span&gt;
+        &lt;/div&gt;
+            &lt;div class=&#34;timeline__title&#34;&gt;widgets&lt;/div&gt;
+        &lt;div class=&#34;timeline__description&#34;&gt;
+            添加时钟小部件
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .timeline {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .timeline__row {
+        display: flex;
+        padding-left: 4%;
+        height: 90px;
+    }
+    
+    .timeline__time {
+        flex: 0 0 110px;
+        color: #bbbaba;
+        font-size: 17px;
+        text-transform: uppercase;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    
+    .timeline__time-text {
+        margin: 0;
+    }
+    
+    .timeline__split-line {
+        position: absolute;
+        top: 0.5rem;
+        right: -20px;
+        height: 100%;
+        width: 2px;
+        background-color: #84c4e240;
+        z-index: 0;
+    }
+    
+    .timeline__split-line:before {
+        content: &#34;&#34;;
+        position: absolute;
+        top: 24%;
+        right: -4px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: #c9e5f2;
+        box-shadow: 0 0 0 4px var(--theme);
+        border-radius: 50%;
+        border: 0px solid #84c4e2;
+        z-index: -1;
+    }
+    
+    .timeline__content {
+        flex: 1;
+        margin-left: 4.5rem;
+        padding: 0.5rem 0 1.2rem 0;
+    }
+    
+    .timeline__title {
+        margin: 0;
+        margin-bottom: 2px;
+        padding-top: 3px;
+        margin-left: 0.5rem;
+        color: var(--content);
+        font-family: var(--font-family-teshu);
+        font-size: 19px;
+        font-weight: 600;
+        width: fit-content;
+        display: inline-block;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__tags {
+        display: inline-block;
+        padding: 0;
+        margin-left: 0.3rem;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    .timeline__tag {
+        display: inline-block;
+        color: var(--secondary);
+        background-color: #84c4e230;
+        border: 1.5px solid #84c4e230;
+        border-radius: 999px;
+        padding: 0rem 0.5rem;
+        font-size: 12px;
+        white-space: nowrap;
+        line-height: 1.4rem;
+        opacity: 0.8;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__description {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #bbbaba;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0.5rem 0 0.4rem 1.5rem;
+         
+    }
+     
+    
+    .timeline__tag-style {
+        background-color: #c581da;
+         
+        border-color: #c581da;
+         
+        color: #FFFFFF;
+         
+    }
+     
+    
+    .timeline__tag-article {
+        background-color: #92d392;
+         
+        border-color: #92d392;
+         
+        color: #000000;
+         
+    }
+     
+    
+    .timeline__tag-page {
+        background-color: #707070;
+         
+        border-color: #707070;
+         
+        color: #FFFFFF;
+         
+    }
+    
+    @media screen and (max-width: 768px) {
+        .timeline__time {
+            font-size: 14px;
+             
+        }
+        .timeline__title {
+            font-size: 16px;
+             
+        }
+        .timeline__description {
+            font-size: 14px;
+             
+        }
+    }
+&lt;/style&gt;
+
+&lt;div class=&#34;timeline__row&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;
+        &lt;div class=&#34;timeline__time&#34;&gt;2025-12-27&lt;/div&gt;
+        &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;timeline__content&#34;&gt;
+        &lt;div class=&#34;timeline__tags&#34;&gt;
+            &lt;span class=&#34;timeline__tag&#34;&gt;feat&lt;/span&gt;
+        &lt;/div&gt;
+            &lt;div class=&#34;timeline__title&#34;&gt;pjax&lt;/div&gt;
+        &lt;div class=&#34;timeline__description&#34;&gt;
+            使用PJAX实现无刷新访问
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .timeline {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .timeline__row {
+        display: flex;
+        padding-left: 4%;
+        height: 90px;
+    }
+    
+    .timeline__time {
+        flex: 0 0 110px;
+        color: #bbbaba;
+        font-size: 17px;
+        text-transform: uppercase;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    
+    .timeline__time-text {
+        margin: 0;
+    }
+    
+    .timeline__split-line {
+        position: absolute;
+        top: 0.5rem;
+        right: -20px;
+        height: 100%;
+        width: 2px;
+        background-color: #84c4e240;
+        z-index: 0;
+    }
+    
+    .timeline__split-line:before {
+        content: &#34;&#34;;
+        position: absolute;
+        top: 24%;
+        right: -4px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: #c9e5f2;
+        box-shadow: 0 0 0 4px var(--theme);
+        border-radius: 50%;
+        border: 0px solid #84c4e2;
+        z-index: -1;
+    }
+    
+    .timeline__content {
+        flex: 1;
+        margin-left: 4.5rem;
+        padding: 0.5rem 0 1.2rem 0;
+    }
+    
+    .timeline__title {
+        margin: 0;
+        margin-bottom: 2px;
+        padding-top: 3px;
+        margin-left: 0.5rem;
+        color: var(--content);
+        font-family: var(--font-family-teshu);
+        font-size: 19px;
+        font-weight: 600;
+        width: fit-content;
+        display: inline-block;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__tags {
+        display: inline-block;
+        padding: 0;
+        margin-left: 0.3rem;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    .timeline__tag {
+        display: inline-block;
+        color: var(--secondary);
+        background-color: #84c4e230;
+        border: 1.5px solid #84c4e230;
+        border-radius: 999px;
+        padding: 0rem 0.5rem;
+        font-size: 12px;
+        white-space: nowrap;
+        line-height: 1.4rem;
+        opacity: 0.8;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__description {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #bbbaba;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0.5rem 0 0.4rem 1.5rem;
+         
+    }
+     
+    
+    .timeline__tag-style {
+        background-color: #c581da;
+         
+        border-color: #c581da;
+         
+        color: #FFFFFF;
+         
+    }
+     
+    
+    .timeline__tag-article {
+        background-color: #92d392;
+         
+        border-color: #92d392;
+         
+        color: #000000;
+         
+    }
+     
+    
+    .timeline__tag-page {
+        background-color: #707070;
+         
+        border-color: #707070;
+         
+        color: #FFFFFF;
+         
+    }
+    
+    @media screen and (max-width: 768px) {
+        .timeline__time {
+            font-size: 14px;
+             
+        }
+        .timeline__title {
+            font-size: 16px;
+             
+        }
+        .timeline__description {
+            font-size: 14px;
+             
+        }
+    }
+&lt;/style&gt;
+
+&lt;div class=&#34;timeline__row&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;
+        &lt;div class=&#34;timeline__time&#34;&gt;2025-12-29&lt;/div&gt;
+        &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;timeline__content&#34;&gt;
+        &lt;div class=&#34;timeline__tags&#34;&gt;
+            &lt;span class=&#34;timeline__tag&#34;&gt;style&lt;/span&gt;
+        &lt;/div&gt;
+            &lt;div class=&#34;timeline__title&#34;&gt;fonts&lt;/div&gt;
+        &lt;div class=&#34;timeline__description&#34;&gt;
+            字体：筑紫A丸 替换博客默认字体
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .timeline {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .timeline__row {
+        display: flex;
+        padding-left: 4%;
+        height: 90px;
+    }
+    
+    .timeline__time {
+        flex: 0 0 110px;
+        color: #bbbaba;
+        font-size: 17px;
+        text-transform: uppercase;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    
+    .timeline__time-text {
+        margin: 0;
+    }
+    
+    .timeline__split-line {
+        position: absolute;
+        top: 0.5rem;
+        right: -20px;
+        height: 100%;
+        width: 2px;
+        background-color: #84c4e240;
+        z-index: 0;
+    }
+    
+    .timeline__split-line:before {
+        content: &#34;&#34;;
+        position: absolute;
+        top: 24%;
+        right: -4px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: #c9e5f2;
+        box-shadow: 0 0 0 4px var(--theme);
+        border-radius: 50%;
+        border: 0px solid #84c4e2;
+        z-index: -1;
+    }
+    
+    .timeline__content {
+        flex: 1;
+        margin-left: 4.5rem;
+        padding: 0.5rem 0 1.2rem 0;
+    }
+    
+    .timeline__title {
+        margin: 0;
+        margin-bottom: 2px;
+        padding-top: 3px;
+        margin-left: 0.5rem;
+        color: var(--content);
+        font-family: var(--font-family-teshu);
+        font-size: 19px;
+        font-weight: 600;
+        width: fit-content;
+        display: inline-block;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__tags {
+        display: inline-block;
+        padding: 0;
+        margin-left: 0.3rem;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    .timeline__tag {
+        display: inline-block;
+        color: var(--secondary);
+        background-color: #84c4e230;
+        border: 1.5px solid #84c4e230;
+        border-radius: 999px;
+        padding: 0rem 0.5rem;
+        font-size: 12px;
+        white-space: nowrap;
+        line-height: 1.4rem;
+        opacity: 0.8;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__description {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #bbbaba;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0.5rem 0 0.4rem 1.5rem;
+         
+    }
+     
+    
+    .timeline__tag-style {
+        background-color: #c581da;
+         
+        border-color: #c581da;
+         
+        color: #FFFFFF;
+         
+    }
+     
+    
+    .timeline__tag-article {
+        background-color: #92d392;
+         
+        border-color: #92d392;
+         
+        color: #000000;
+         
+    }
+     
+    
+    .timeline__tag-page {
+        background-color: #707070;
+         
+        border-color: #707070;
+         
+        color: #FFFFFF;
+         
+    }
+    
+    @media screen and (max-width: 768px) {
+        .timeline__time {
+            font-size: 14px;
+             
+        }
+        .timeline__title {
+            font-size: 16px;
+             
+        }
+        .timeline__description {
+            font-size: 14px;
+             
+        }
+    }
+&lt;/style&gt;
+
+&lt;div class=&#34;timeline__row&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;
+        &lt;div class=&#34;timeline__time&#34;&gt;2025-12-30&lt;/div&gt;
+        &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;timeline__content&#34;&gt;
+        &lt;div class=&#34;timeline__tags&#34;&gt;
+            &lt;span class=&#34;timeline__tag&#34;&gt;style&lt;/span&gt;
+        &lt;/div&gt;
+            &lt;div class=&#34;timeline__title&#34;&gt;layouts,widgets&lt;/div&gt;
+        &lt;div class=&#34;timeline__description&#34;&gt;
+            修改博客默认页面样式和小部件样式
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .timeline {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .timeline__row {
+        display: flex;
+        padding-left: 4%;
+        height: 90px;
+    }
+    
+    .timeline__time {
+        flex: 0 0 110px;
+        color: #bbbaba;
+        font-size: 17px;
+        text-transform: uppercase;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    
+    .timeline__time-text {
+        margin: 0;
+    }
+    
+    .timeline__split-line {
+        position: absolute;
+        top: 0.5rem;
+        right: -20px;
+        height: 100%;
+        width: 2px;
+        background-color: #84c4e240;
+        z-index: 0;
+    }
+    
+    .timeline__split-line:before {
+        content: &#34;&#34;;
+        position: absolute;
+        top: 24%;
+        right: -4px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: #c9e5f2;
+        box-shadow: 0 0 0 4px var(--theme);
+        border-radius: 50%;
+        border: 0px solid #84c4e2;
+        z-index: -1;
+    }
+    
+    .timeline__content {
+        flex: 1;
+        margin-left: 4.5rem;
+        padding: 0.5rem 0 1.2rem 0;
+    }
+    
+    .timeline__title {
+        margin: 0;
+        margin-bottom: 2px;
+        padding-top: 3px;
+        margin-left: 0.5rem;
+        color: var(--content);
+        font-family: var(--font-family-teshu);
+        font-size: 19px;
+        font-weight: 600;
+        width: fit-content;
+        display: inline-block;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__tags {
+        display: inline-block;
+        padding: 0;
+        margin-left: 0.3rem;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    .timeline__tag {
+        display: inline-block;
+        color: var(--secondary);
+        background-color: #84c4e230;
+        border: 1.5px solid #84c4e230;
+        border-radius: 999px;
+        padding: 0rem 0.5rem;
+        font-size: 12px;
+        white-space: nowrap;
+        line-height: 1.4rem;
+        opacity: 0.8;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__description {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #bbbaba;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0.5rem 0 0.4rem 1.5rem;
+         
+    }
+     
+    
+    .timeline__tag-style {
+        background-color: #c581da;
+         
+        border-color: #c581da;
+         
+        color: #FFFFFF;
+         
+    }
+     
+    
+    .timeline__tag-article {
+        background-color: #92d392;
+         
+        border-color: #92d392;
+         
+        color: #000000;
+         
+    }
+     
+    
+    .timeline__tag-page {
+        background-color: #707070;
+         
+        border-color: #707070;
+         
+        color: #FFFFFF;
+         
+    }
+    
+    @media screen and (max-width: 768px) {
+        .timeline__time {
+            font-size: 14px;
+             
+        }
+        .timeline__title {
+            font-size: 16px;
+             
+        }
+        .timeline__description {
+            font-size: 14px;
+             
+        }
+    }
+&lt;/style&gt;
+
+&lt;div class=&#34;timeline__row&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;
+        &lt;div class=&#34;timeline__time&#34;&gt;2025-12-31&lt;/div&gt;
+        &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;timeline__content&#34;&gt;
+        &lt;div class=&#34;timeline__tags&#34;&gt;
+            &lt;span class=&#34;timeline__tag&#34;&gt;fix&lt;/span&gt;
+        &lt;/div&gt;
+            &lt;div class=&#34;timeline__title&#34;&gt;blog&amp;#39;s layout,music,code-block,comment,...&lt;/div&gt;
+        &lt;div class=&#34;timeline__description&#34;&gt;
+            修复引入pjax导致的博客样式、音乐播放器、代码块样式、评论等一系列问题
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .timeline {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .timeline__row {
+        display: flex;
+        padding-left: 4%;
+        height: 90px;
+    }
+    
+    .timeline__time {
+        flex: 0 0 110px;
+        color: #bbbaba;
+        font-size: 17px;
+        text-transform: uppercase;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    
+    .timeline__time-text {
+        margin: 0;
+    }
+    
+    .timeline__split-line {
+        position: absolute;
+        top: 0.5rem;
+        right: -20px;
+        height: 100%;
+        width: 2px;
+        background-color: #84c4e240;
+        z-index: 0;
+    }
+    
+    .timeline__split-line:before {
+        content: &#34;&#34;;
+        position: absolute;
+        top: 24%;
+        right: -4px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: #c9e5f2;
+        box-shadow: 0 0 0 4px var(--theme);
+        border-radius: 50%;
+        border: 0px solid #84c4e2;
+        z-index: -1;
+    }
+    
+    .timeline__content {
+        flex: 1;
+        margin-left: 4.5rem;
+        padding: 0.5rem 0 1.2rem 0;
+    }
+    
+    .timeline__title {
+        margin: 0;
+        margin-bottom: 2px;
+        padding-top: 3px;
+        margin-left: 0.5rem;
+        color: var(--content);
+        font-family: var(--font-family-teshu);
+        font-size: 19px;
+        font-weight: 600;
+        width: fit-content;
+        display: inline-block;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__tags {
+        display: inline-block;
+        padding: 0;
+        margin-left: 0.3rem;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    .timeline__tag {
+        display: inline-block;
+        color: var(--secondary);
+        background-color: #84c4e230;
+        border: 1.5px solid #84c4e230;
+        border-radius: 999px;
+        padding: 0rem 0.5rem;
+        font-size: 12px;
+        white-space: nowrap;
+        line-height: 1.4rem;
+        opacity: 0.8;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__description {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #bbbaba;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0.5rem 0 0.4rem 1.5rem;
+         
+    }
+     
+    
+    .timeline__tag-style {
+        background-color: #c581da;
+         
+        border-color: #c581da;
+         
+        color: #FFFFFF;
+         
+    }
+     
+    
+    .timeline__tag-article {
+        background-color: #92d392;
+         
+        border-color: #92d392;
+         
+        color: #000000;
+         
+    }
+     
+    
+    .timeline__tag-page {
+        background-color: #707070;
+         
+        border-color: #707070;
+         
+        color: #FFFFFF;
+         
+    }
+    
+    @media screen and (max-width: 768px) {
+        .timeline__time {
+            font-size: 14px;
+             
+        }
+        .timeline__title {
+            font-size: 16px;
+             
+        }
+        .timeline__description {
+            font-size: 14px;
+             
+        }
+    }
+&lt;/style&gt;
+
+&lt;div class=&#34;timeline__row&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;
+        &lt;div class=&#34;timeline__time&#34;&gt;2026-01-06&lt;/div&gt;
+        &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;timeline__content&#34;&gt;
+        &lt;div class=&#34;timeline__tags&#34;&gt;
+            &lt;span class=&#34;timeline__tag&#34;&gt;feat&lt;/span&gt;
+        &lt;/div&gt;
+            &lt;div class=&#34;timeline__title&#34;&gt;maplibre&lt;/div&gt;
+        &lt;div class=&#34;timeline__description&#34;&gt;
+            添加maplibre地图
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .timeline {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .timeline__row {
+        display: flex;
+        padding-left: 4%;
+        height: 90px;
+    }
+    
+    .timeline__time {
+        flex: 0 0 110px;
+        color: #bbbaba;
+        font-size: 17px;
+        text-transform: uppercase;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    
+    .timeline__time-text {
+        margin: 0;
+    }
+    
+    .timeline__split-line {
+        position: absolute;
+        top: 0.5rem;
+        right: -20px;
+        height: 100%;
+        width: 2px;
+        background-color: #84c4e240;
+        z-index: 0;
+    }
+    
+    .timeline__split-line:before {
+        content: &#34;&#34;;
+        position: absolute;
+        top: 24%;
+        right: -4px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: #c9e5f2;
+        box-shadow: 0 0 0 4px var(--theme);
+        border-radius: 50%;
+        border: 0px solid #84c4e2;
+        z-index: -1;
+    }
+    
+    .timeline__content {
+        flex: 1;
+        margin-left: 4.5rem;
+        padding: 0.5rem 0 1.2rem 0;
+    }
+    
+    .timeline__title {
+        margin: 0;
+        margin-bottom: 2px;
+        padding-top: 3px;
+        margin-left: 0.5rem;
+        color: var(--content);
+        font-family: var(--font-family-teshu);
+        font-size: 19px;
+        font-weight: 600;
+        width: fit-content;
+        display: inline-block;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__tags {
+        display: inline-block;
+        padding: 0;
+        margin-left: 0.3rem;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    .timeline__tag {
+        display: inline-block;
+        color: var(--secondary);
+        background-color: #84c4e230;
+        border: 1.5px solid #84c4e230;
+        border-radius: 999px;
+        padding: 0rem 0.5rem;
+        font-size: 12px;
+        white-space: nowrap;
+        line-height: 1.4rem;
+        opacity: 0.8;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__description {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #bbbaba;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0.5rem 0 0.4rem 1.5rem;
+         
+    }
+     
+    
+    .timeline__tag-style {
+        background-color: #c581da;
+         
+        border-color: #c581da;
+         
+        color: #FFFFFF;
+         
+    }
+     
+    
+    .timeline__tag-article {
+        background-color: #92d392;
+         
+        border-color: #92d392;
+         
+        color: #000000;
+         
+    }
+     
+    
+    .timeline__tag-page {
+        background-color: #707070;
+         
+        border-color: #707070;
+         
+        color: #FFFFFF;
+         
+    }
+    
+    @media screen and (max-width: 768px) {
+        .timeline__time {
+            font-size: 14px;
+             
+        }
+        .timeline__title {
+            font-size: 16px;
+             
+        }
+        .timeline__description {
+            font-size: 14px;
+             
+        }
+    }
+&lt;/style&gt;
+
+&lt;div class=&#34;timeline__row&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;
+        &lt;div class=&#34;timeline__time&#34;&gt;2026-01-08&lt;/div&gt;
+        &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;timeline__content&#34;&gt;
+        &lt;div class=&#34;timeline__tags&#34;&gt;
+            &lt;span class=&#34;timeline__tag&#34;&gt;refactor&lt;/span&gt;
+        &lt;/div&gt;
+            &lt;div class=&#34;timeline__title&#34;&gt;travelPage&lt;/div&gt;
+        &lt;div class=&#34;timeline__description&#34;&gt;
+            取消添加旅行页面.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .timeline {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .timeline__row {
+        display: flex;
+        padding-left: 4%;
+        height: 90px;
+    }
+    
+    .timeline__time {
+        flex: 0 0 110px;
+        color: #bbbaba;
+        font-size: 17px;
+        text-transform: uppercase;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    
+    .timeline__time-text {
+        margin: 0;
+    }
+    
+    .timeline__split-line {
+        position: absolute;
+        top: 0.5rem;
+        right: -20px;
+        height: 100%;
+        width: 2px;
+        background-color: #84c4e240;
+        z-index: 0;
+    }
+    
+    .timeline__split-line:before {
+        content: &#34;&#34;;
+        position: absolute;
+        top: 24%;
+        right: -4px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: #c9e5f2;
+        box-shadow: 0 0 0 4px var(--theme);
+        border-radius: 50%;
+        border: 0px solid #84c4e2;
+        z-index: -1;
+    }
+    
+    .timeline__content {
+        flex: 1;
+        margin-left: 4.5rem;
+        padding: 0.5rem 0 1.2rem 0;
+    }
+    
+    .timeline__title {
+        margin: 0;
+        margin-bottom: 2px;
+        padding-top: 3px;
+        margin-left: 0.5rem;
+        color: var(--content);
+        font-family: var(--font-family-teshu);
+        font-size: 19px;
+        font-weight: 600;
+        width: fit-content;
+        display: inline-block;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__tags {
+        display: inline-block;
+        padding: 0;
+        margin-left: 0.3rem;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    .timeline__tag {
+        display: inline-block;
+        color: var(--secondary);
+        background-color: #84c4e230;
+        border: 1.5px solid #84c4e230;
+        border-radius: 999px;
+        padding: 0rem 0.5rem;
+        font-size: 12px;
+        white-space: nowrap;
+        line-height: 1.4rem;
+        opacity: 0.8;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__description {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #bbbaba;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0.5rem 0 0.4rem 1.5rem;
+         
+    }
+     
+    
+    .timeline__tag-style {
+        background-color: #c581da;
+         
+        border-color: #c581da;
+         
+        color: #FFFFFF;
+         
+    }
+     
+    
+    .timeline__tag-article {
+        background-color: #92d392;
+         
+        border-color: #92d392;
+         
+        color: #000000;
+         
+    }
+     
+    
+    .timeline__tag-page {
+        background-color: #707070;
+         
+        border-color: #707070;
+         
+        color: #FFFFFF;
+         
+    }
+    
+    @media screen and (max-width: 768px) {
+        .timeline__time {
+            font-size: 14px;
+             
+        }
+        .timeline__title {
+            font-size: 16px;
+             
+        }
+        .timeline__description {
+            font-size: 14px;
+             
+        }
+    }
+&lt;/style&gt;
+
+&lt;div class=&#34;timeline__row&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;
+        &lt;div class=&#34;timeline__time&#34;&gt;2026-01-09&lt;/div&gt;
+        &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;timeline__content&#34;&gt;
+        &lt;div class=&#34;timeline__tags&#34;&gt;
+            &lt;span class=&#34;timeline__tag&#34;&gt;feat&lt;/span&gt;
+        &lt;/div&gt;
+            &lt;div class=&#34;timeline__title&#34;&gt;volumeControl&lt;/div&gt;
+        &lt;div class=&#34;timeline__description&#34;&gt;
+            添加播放器的音量控制.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .timeline {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .timeline__row {
+        display: flex;
+        padding-left: 4%;
+        height: 90px;
+    }
+    
+    .timeline__time {
+        flex: 0 0 110px;
+        color: #bbbaba;
+        font-size: 17px;
+        text-transform: uppercase;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    
+    .timeline__time-text {
+        margin: 0;
+    }
+    
+    .timeline__split-line {
+        position: absolute;
+        top: 0.5rem;
+        right: -20px;
+        height: 100%;
+        width: 2px;
+        background-color: #84c4e240;
+        z-index: 0;
+    }
+    
+    .timeline__split-line:before {
+        content: &#34;&#34;;
+        position: absolute;
+        top: 24%;
+        right: -4px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: #c9e5f2;
+        box-shadow: 0 0 0 4px var(--theme);
+        border-radius: 50%;
+        border: 0px solid #84c4e2;
+        z-index: -1;
+    }
+    
+    .timeline__content {
+        flex: 1;
+        margin-left: 4.5rem;
+        padding: 0.5rem 0 1.2rem 0;
+    }
+    
+    .timeline__title {
+        margin: 0;
+        margin-bottom: 2px;
+        padding-top: 3px;
+        margin-left: 0.5rem;
+        color: var(--content);
+        font-family: var(--font-family-teshu);
+        font-size: 19px;
+        font-weight: 600;
+        width: fit-content;
+        display: inline-block;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__tags {
+        display: inline-block;
+        padding: 0;
+        margin-left: 0.3rem;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    .timeline__tag {
+        display: inline-block;
+        color: var(--secondary);
+        background-color: #84c4e230;
+        border: 1.5px solid #84c4e230;
+        border-radius: 999px;
+        padding: 0rem 0.5rem;
+        font-size: 12px;
+        white-space: nowrap;
+        line-height: 1.4rem;
+        opacity: 0.8;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__description {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #bbbaba;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0.5rem 0 0.4rem 1.5rem;
+         
+    }
+     
+    
+    .timeline__tag-style {
+        background-color: #c581da;
+         
+        border-color: #c581da;
+         
+        color: #FFFFFF;
+         
+    }
+     
+    
+    .timeline__tag-article {
+        background-color: #92d392;
+         
+        border-color: #92d392;
+         
+        color: #000000;
+         
+    }
+     
+    
+    .timeline__tag-page {
+        background-color: #707070;
+         
+        border-color: #707070;
+         
+        color: #FFFFFF;
+         
+    }
+    
+    @media screen and (max-width: 768px) {
+        .timeline__time {
+            font-size: 14px;
+             
+        }
+        .timeline__title {
+            font-size: 16px;
+             
+        }
+        .timeline__description {
+            font-size: 14px;
+             
+        }
+    }
+&lt;/style&gt;
+
+&lt;div class=&#34;timeline__row&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;
+        &lt;div class=&#34;timeline__time&#34;&gt;2026-01-12&lt;/div&gt;
+        &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;timeline__content&#34;&gt;
+        &lt;div class=&#34;timeline__tags&#34;&gt;
+            &lt;span class=&#34;timeline__tag&#34;&gt;fix&lt;/span&gt;
+        &lt;/div&gt;
+            &lt;div class=&#34;timeline__title&#34;&gt;music play&lt;/div&gt;
+        &lt;div class=&#34;timeline__description&#34;&gt;
+            修复播放器主题切换歌单时出现的bug.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .timeline {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .timeline__row {
+        display: flex;
+        padding-left: 4%;
+        height: 90px;
+    }
+    
+    .timeline__time {
+        flex: 0 0 110px;
+        color: #bbbaba;
+        font-size: 17px;
+        text-transform: uppercase;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    
+    .timeline__time-text {
+        margin: 0;
+    }
+    
+    .timeline__split-line {
+        position: absolute;
+        top: 0.5rem;
+        right: -20px;
+        height: 100%;
+        width: 2px;
+        background-color: #84c4e240;
+        z-index: 0;
+    }
+    
+    .timeline__split-line:before {
+        content: &#34;&#34;;
+        position: absolute;
+        top: 24%;
+        right: -4px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: #c9e5f2;
+        box-shadow: 0 0 0 4px var(--theme);
+        border-radius: 50%;
+        border: 0px solid #84c4e2;
+        z-index: -1;
+    }
+    
+    .timeline__content {
+        flex: 1;
+        margin-left: 4.5rem;
+        padding: 0.5rem 0 1.2rem 0;
+    }
+    
+    .timeline__title {
+        margin: 0;
+        margin-bottom: 2px;
+        padding-top: 3px;
+        margin-left: 0.5rem;
+        color: var(--content);
+        font-family: var(--font-family-teshu);
+        font-size: 19px;
+        font-weight: 600;
+        width: fit-content;
+        display: inline-block;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__tags {
+        display: inline-block;
+        padding: 0;
+        margin-left: 0.3rem;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    .timeline__tag {
+        display: inline-block;
+        color: var(--secondary);
+        background-color: #84c4e230;
+        border: 1.5px solid #84c4e230;
+        border-radius: 999px;
+        padding: 0rem 0.5rem;
+        font-size: 12px;
+        white-space: nowrap;
+        line-height: 1.4rem;
+        opacity: 0.8;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__description {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #bbbaba;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0.5rem 0 0.4rem 1.5rem;
+         
+    }
+     
+    
+    .timeline__tag-style {
+        background-color: #c581da;
+         
+        border-color: #c581da;
+         
+        color: #FFFFFF;
+         
+    }
+     
+    
+    .timeline__tag-article {
+        background-color: #92d392;
+         
+        border-color: #92d392;
+         
+        color: #000000;
+         
+    }
+     
+    
+    .timeline__tag-page {
+        background-color: #707070;
+         
+        border-color: #707070;
+         
+        color: #FFFFFF;
+         
+    }
+    
+    @media screen and (max-width: 768px) {
+        .timeline__time {
+            font-size: 14px;
+             
+        }
+        .timeline__title {
+            font-size: 16px;
+             
+        }
+        .timeline__description {
+            font-size: 14px;
+             
+        }
+    }
+&lt;/style&gt;
+&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>検索</title>
+        <link>/jp/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/jp/search/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>私について</title>
+        <link>/jp/%E7%A7%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>/jp/%E7%A7%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</guid>
         <description>&lt;p&gt;こんにちは！小さなサイトへようこそ、私はラオワンです。&lt;/p&gt;
 &lt;p&gt;このサイトは、学習や開発の過程で出会った難しい点や、経験した失敗、そしてその解決方法を記録するためのものです。皆さんの参考になれば幸いです。&lt;/p&gt;
 &lt;p&gt;普段私が使っているナレッジベースのウェブサイトいくつか：&lt;/p&gt;
@@ -30,14 +1584,6 @@
 &lt;p&gt;If you think this site is not bad, I hope to move &lt;a class=&#34;link&#34; href=&#34;https://github.com/MindaRyn1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Github&lt;/a&gt; to order a star🌟 for my project, thank you very much!&lt;/p&gt;
 </description>
-        </item>
-        <item>
-        <title>検索</title>
-        <link>/jp/search/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>/jp/search/</guid>
-        <description></description>
         </item>
         
     </channel>

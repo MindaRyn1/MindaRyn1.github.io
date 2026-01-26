@@ -7,7 +7,1013 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>老王同学的技术博客</copyright>
-        <lastBuildDate>Mon, 16 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>博客中使用到的短代码</title>
+        <link>/p/%E5%8D%9A%E5%AE%A2%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%88%B0%E7%9A%84%E7%9F%AD%E4%BB%A3%E7%A0%81/</link>
+        <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>/p/%E5%8D%9A%E5%AE%A2%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%88%B0%E7%9A%84%E7%9F%AD%E4%BB%A3%E7%A0%81/</guid>
+        <description>&lt;h2 id=&#34;高斯模糊&#34;&gt;高斯模糊
+&lt;/h2&gt;&lt;p&gt;效果：
+&lt;span class=&#34;blur&#34;&gt;手动打码效果&lt;/span&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;代码：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;span&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;blur&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;手动打码效果&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;span&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;键盘样式&#34;&gt;键盘样式
+&lt;/h2&gt;&lt;p&gt;效果：
+&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;Alt&lt;/nkbd&gt;+&lt;nkbd&gt;Del&lt;/nkbd&gt;&lt;/p&gt;
+&lt;p&gt;代码：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;nkbd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Ctrl&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;nkbd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;nkbd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Alt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;nkbd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;nkbd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Del&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;nkbd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;居中引用&#34;&gt;居中引用
+&lt;/h2&gt;&lt;p&gt;效果：
+&lt;div class=&#34;quote-center&#34;&gt; 
+    &lt;/p&gt;&lt;p&gt;人生代代无穷已，江月年年望相似。&lt;br&gt;不知江月待何人，但见长江送流水。&lt;/p&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;代码：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;quote&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;center&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;人生代代无穷已&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;，&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;江月年年望相似&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;。&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;br&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;不知江月待何人&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;，&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;但见长江送流水&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;。&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;quote&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;center&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;提示样式&#34;&gt;提示样式
+&lt;/h2&gt;&lt;p&gt;效果：
+
+&lt;div class=&#34;notice notice-warning&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34;&gt;&lt;path d=&#34;M570 440c18 32-5 72-42 72H48c-37 0-60-40-42-72L246 24c19-32 65-32 84 0l240 416zm-282-86a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Warning&lt;/p&gt;&lt;/div&gt;
+
+
+&lt;div class=&#34;notice notice-info&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path d=&#34;M256 8a248 248 0 100 496 248 248 0 000-496zm0 110a42 42 0 110 84 42 42 0 010-84zm56 254c0 7-5 12-12 12h-88c-7 0-12-5-12-12v-24c0-7 5-12 12-12h12v-64h-12c-7 0-12-5-12-12v-24c0-7 5-12 12-12h64c7 0 12 5 12 12v100h12c7 0 12 5 12 12v24z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Info&lt;/p&gt;&lt;/div&gt;
+
+
+&lt;div class=&#34;notice notice-note&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zm-248 50a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Note&lt;/p&gt;&lt;/div&gt;
+
+
+&lt;div class=&#34;notice notice-tip&#34; &gt;
+    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zM227 387l184-184c7-6 7-16 0-22l-22-23c-7-6-17-6-23 0L216 308l-70-70c-6-6-16-6-23 0l-22 23c-7 6-7 16 0 22l104 104c6 7 16 7 22 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;Tip&lt;/p&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;代码：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;warning&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Warning&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;info&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Info&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;note&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Note&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;tip&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Tip&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;notice&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;图片轮播&#34;&gt;图片轮播
+&lt;/h2&gt;&lt;p&gt;效果：
+
+    &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css&#34;&gt;
+    
+    &lt;div class=&#34;swiper-container&#34;&gt;
+        &lt;div class=&#34;swiper-wrapper&#34;&gt;
+            
+            
+            &lt;div class=&#34;swiper-slide&#34;&gt;
+                &lt;img src=&#34;01.jpg&#34; alt=&#34;&#34;&gt;
+            &lt;/div&gt;
+            
+            &lt;div class=&#34;swiper-slide&#34;&gt;
+                &lt;img src=&#34;02.jpg&#34; alt=&#34;&#34;&gt;
+            &lt;/div&gt;
+            
+            &lt;div class=&#34;swiper-slide&#34;&gt;
+                &lt;img src=&#34;03.jpg&#34; alt=&#34;&#34;&gt;
+            &lt;/div&gt;
+            
+        &lt;/div&gt;
+        
+        &lt;div class=&#34;swiper-pagination&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js&#34;&gt;&lt;/script&gt;
+     
+     &lt;script&gt;
+        var swiper = new Swiper(&#39;.swiper-container&#39;, {
+            pagination: &#39;.swiper-pagination&#39;,
+            paginationClickable: true,
+        
+        autoHeight: true,
+        
+        keyboardControl : true,
+        
+        mousewheelControl : true,
+        
+        
+        
+        lazyLoading : true,
+		lazyLoadingInPrevNext : true,
+		
+		loop : true,
+        });
+        &lt;/script&gt;
+
+&lt;/p&gt;
+&lt;p&gt;代码：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;imgloop&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;1.jpg,2.jpg,3.jpg&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;对话框&#34;&gt;对话框
+&lt;/h2&gt;&lt;p&gt;效果：
+
+&lt;div class=&#34;chat --other&#34;&gt;
+    &lt;div class=&#34;chat__inner&#34;&gt;
+        &lt;div class=&#34;chat__meta&#34;&gt;John Doe&amp;nbsp;&amp;nbsp;&amp;nbsp;2023-09-12 14:30&lt;/div&gt;
+        &lt;div class=&#34;chat__text&#34;&gt;
+            这是左边的消息内容。
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;style&gt;
+    .chat {
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+         
+        transition: transform 0.2s;
+         
+        max-width: 80%;
+        min-width: 15%;
+    }
+    
+    .chat:hover {
+        transform: scale(1.05);
+    }
+    
+    .chat.--self {
+        text-align: left;
+        background-color: #ecf5ff;
+        color: #000000;
+        border-radius: 15px;
+        width: fit-content;
+        margin-left: auto;
+    }
+     
+    
+    .chat.--self::before {
+        content: &#34;&#34;;
+        position: absolute;
+        right: -18px;
+         
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 0 0 20px;
+        border-style: solid;
+        border-color: transparent transparent transparent #ecf5ff;
+         
+    }
+     
+    
+    .chat.--other {
+        text-align: left;
+        background-color: #ffecec;
+        color: #333;
+        border-radius: 15px;
+        position: relative;
+        width: fit-content;
+    }
+     
+    
+    .chat.--other::before {
+        content: &#34;&#34;;
+        position: absolute;
+        left: -18px;
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 20px 0 0;
+        border-style: solid;
+        border-color: transparent #ffecec transparent transparent;
+    }
+     
+    
+    .chat__meta {
+        font-weight: bold;
+        font-size: 0.67em;
+        color: #707070;
+        margin-bottom: 5px;
+    }
+     
+    
+    .chat__text {
+        font-size: 0.9em;
+        margin-left: 10px;
+        word-break: break-all;
+    }
+    
+    [data-scheme=&#34;dark&#34;] {
+        .chat.--self {
+            color: #fefefe;
+            background-color: #2a830f;
+        }
+        .chat.--self::before {
+            border-color: transparent transparent transparent #2a830f;;
+        }
+        .chat.--other {
+            color: #fefefe;
+            background-color: #1a1a1a;
+        }
+        .chat.--other::before {
+            border-color: transparent #1a1a1a transparent transparent;
+        }
+        .chat__meta {
+            color: #b1b1b1;
+        }
+    }
+&lt;/style&gt;
+
+
+&lt;div class=&#34;chat --self&#34;&gt;
+    &lt;div class=&#34;chat__inner&#34;&gt;
+        &lt;div class=&#34;chat__meta&#34; style=&#34;text-align: right;&#34;&gt;2023-09-12 14:45&amp;nbsp;&amp;nbsp;&amp;nbsp;Alice&lt;/div&gt;
+        &lt;div class=&#34;chat__text&#34;&gt;
+            这是右边的消息内容。
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;style&gt;
+    .chat {
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+         
+        transition: transform 0.2s;
+         
+        max-width: 80%;
+        min-width: 15%;
+    }
+    
+    .chat:hover {
+        transform: scale(1.05);
+    }
+    
+    .chat.--self {
+        text-align: left;
+        background-color: #ecf5ff;
+        color: #000000;
+        border-radius: 15px;
+        width: fit-content;
+        margin-left: auto;
+    }
+     
+    
+    .chat.--self::before {
+        content: &#34;&#34;;
+        position: absolute;
+        right: -18px;
+         
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 0 0 20px;
+        border-style: solid;
+        border-color: transparent transparent transparent #ecf5ff;
+         
+    }
+     
+    
+    .chat.--other {
+        text-align: left;
+        background-color: #ffecec;
+        color: #333;
+        border-radius: 15px;
+        position: relative;
+        width: fit-content;
+    }
+     
+    
+    .chat.--other::before {
+        content: &#34;&#34;;
+        position: absolute;
+        left: -18px;
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 20px 0 0;
+        border-style: solid;
+        border-color: transparent #ffecec transparent transparent;
+    }
+     
+    
+    .chat__meta {
+        font-weight: bold;
+        font-size: 0.67em;
+        color: #707070;
+        margin-bottom: 5px;
+    }
+     
+    
+    .chat__text {
+        font-size: 0.9em;
+        margin-left: 10px;
+        word-break: break-all;
+    }
+    
+    [data-scheme=&#34;dark&#34;] {
+        .chat.--self {
+            color: #fefefe;
+            background-color: #2a830f;
+        }
+        .chat.--self::before {
+            border-color: transparent transparent transparent #2a830f;;
+        }
+        .chat.--other {
+            color: #fefefe;
+            background-color: #1a1a1a;
+        }
+        .chat.--other::before {
+            border-color: transparent #1a1a1a transparent transparent;
+        }
+        .chat__meta {
+            color: #b1b1b1;
+        }
+    }
+&lt;/style&gt;
+&lt;/p&gt;
+&lt;p&gt;代码：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;chat&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;position&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;left&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;John Doe&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;timestamp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;2023-09-12 14:30&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;这是左边的消息内容&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;。&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;chat&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;chat&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;position&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;right&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Alice&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;timestamp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;2023-09-12 14:45&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;这是右边的消息内容&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;。&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;chat&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;时间轴&#34;&gt;时间轴
+&lt;/h2&gt;&lt;p&gt;效果：
+&lt;div class=&#34;timeline__row&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;
+        &lt;div class=&#34;timeline__time&#34;&gt;2024&lt;/div&gt;
+        &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;timeline__content&#34;&gt;
+        &lt;div class=&#34;timeline__tags&#34;&gt;
+            &lt;span class=&#34;timeline__tag&#34;&gt;past&lt;/span&gt;
+        &lt;/div&gt;
+            &lt;div class=&#34;timeline__title&#34;&gt;First Time&lt;/div&gt;
+        &lt;div class=&#34;timeline__description&#34;&gt;
+            我是萌新
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .timeline {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .timeline__row {
+        display: flex;
+        padding-left: 4%;
+        height: 90px;
+    }
+    
+    .timeline__time {
+        flex: 0 0 110px;
+        color: #bbbaba;
+        font-size: 17px;
+        text-transform: uppercase;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    
+    .timeline__time-text {
+        margin: 0;
+    }
+    
+    .timeline__split-line {
+        position: absolute;
+        top: 0.5rem;
+        right: -20px;
+        height: 100%;
+        width: 2px;
+        background-color: #84c4e240;
+        z-index: 0;
+    }
+    
+    .timeline__split-line:before {
+        content: &#34;&#34;;
+        position: absolute;
+        top: 24%;
+        right: -4px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: #c9e5f2;
+        box-shadow: 0 0 0 4px var(--theme);
+        border-radius: 50%;
+        border: 0px solid #84c4e2;
+        z-index: -1;
+    }
+    
+    .timeline__content {
+        flex: 1;
+        margin-left: 4.5rem;
+        padding: 0.5rem 0 1.2rem 0;
+    }
+    
+    .timeline__title {
+        margin: 0;
+        margin-bottom: 2px;
+        padding-top: 3px;
+        margin-left: 0.5rem;
+        color: var(--content);
+        font-family: var(--font-family-teshu);
+        font-size: 19px;
+        font-weight: 600;
+        width: fit-content;
+        display: inline-block;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__tags {
+        display: inline-block;
+        padding: 0;
+        margin-left: 0.3rem;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    .timeline__tag {
+        display: inline-block;
+        color: var(--secondary);
+        background-color: #84c4e230;
+        border: 1.5px solid #84c4e230;
+        border-radius: 999px;
+        padding: 0rem 0.5rem;
+        font-size: 12px;
+        white-space: nowrap;
+        line-height: 1.4rem;
+        opacity: 0.8;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__description {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #bbbaba;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0.5rem 0 0.4rem 1.5rem;
+         
+    }
+     
+    
+    .timeline__tag-style {
+        background-color: #c581da;
+         
+        border-color: #c581da;
+         
+        color: #FFFFFF;
+         
+    }
+     
+    
+    .timeline__tag-article {
+        background-color: #92d392;
+         
+        border-color: #92d392;
+         
+        color: #000000;
+         
+    }
+     
+    
+    .timeline__tag-page {
+        background-color: #707070;
+         
+        border-color: #707070;
+         
+        color: #FFFFFF;
+         
+    }
+    
+    @media screen and (max-width: 768px) {
+        .timeline__time {
+            font-size: 14px;
+             
+        }
+        .timeline__title {
+            font-size: 16px;
+             
+        }
+        .timeline__description {
+            font-size: 14px;
+             
+        }
+    }
+&lt;/style&gt;
+&lt;div class=&#34;timeline__row&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;
+        &lt;div class=&#34;timeline__time&#34;&gt;2025&lt;/div&gt;
+        &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;timeline__content&#34;&gt;
+        &lt;div class=&#34;timeline__tags&#34;&gt;
+            &lt;span class=&#34;timeline__tag&#34;&gt;now&lt;/span&gt;
+        &lt;/div&gt;
+            &lt;div class=&#34;timeline__title&#34;&gt;Second Time&lt;/div&gt;
+        &lt;div class=&#34;timeline__description&#34;&gt;
+            我还是萌新
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .timeline {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .timeline__row {
+        display: flex;
+        padding-left: 4%;
+        height: 90px;
+    }
+    
+    .timeline__time {
+        flex: 0 0 110px;
+        color: #bbbaba;
+        font-size: 17px;
+        text-transform: uppercase;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    
+    .timeline__time-text {
+        margin: 0;
+    }
+    
+    .timeline__split-line {
+        position: absolute;
+        top: 0.5rem;
+        right: -20px;
+        height: 100%;
+        width: 2px;
+        background-color: #84c4e240;
+        z-index: 0;
+    }
+    
+    .timeline__split-line:before {
+        content: &#34;&#34;;
+        position: absolute;
+        top: 24%;
+        right: -4px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: #c9e5f2;
+        box-shadow: 0 0 0 4px var(--theme);
+        border-radius: 50%;
+        border: 0px solid #84c4e2;
+        z-index: -1;
+    }
+    
+    .timeline__content {
+        flex: 1;
+        margin-left: 4.5rem;
+        padding: 0.5rem 0 1.2rem 0;
+    }
+    
+    .timeline__title {
+        margin: 0;
+        margin-bottom: 2px;
+        padding-top: 3px;
+        margin-left: 0.5rem;
+        color: var(--content);
+        font-family: var(--font-family-teshu);
+        font-size: 19px;
+        font-weight: 600;
+        width: fit-content;
+        display: inline-block;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__tags {
+        display: inline-block;
+        padding: 0;
+        margin-left: 0.3rem;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    .timeline__tag {
+        display: inline-block;
+        color: var(--secondary);
+        background-color: #84c4e230;
+        border: 1.5px solid #84c4e230;
+        border-radius: 999px;
+        padding: 0rem 0.5rem;
+        font-size: 12px;
+        white-space: nowrap;
+        line-height: 1.4rem;
+        opacity: 0.8;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__description {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #bbbaba;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0.5rem 0 0.4rem 1.5rem;
+         
+    }
+     
+    
+    .timeline__tag-style {
+        background-color: #c581da;
+         
+        border-color: #c581da;
+         
+        color: #FFFFFF;
+         
+    }
+     
+    
+    .timeline__tag-article {
+        background-color: #92d392;
+         
+        border-color: #92d392;
+         
+        color: #000000;
+         
+    }
+     
+    
+    .timeline__tag-page {
+        background-color: #707070;
+         
+        border-color: #707070;
+         
+        color: #FFFFFF;
+         
+    }
+    
+    @media screen and (max-width: 768px) {
+        .timeline__time {
+            font-size: 14px;
+             
+        }
+        .timeline__title {
+            font-size: 16px;
+             
+        }
+        .timeline__description {
+            font-size: 14px;
+             
+        }
+    }
+&lt;/style&gt;
+
+代码：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;timeline&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;date&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;2024&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;First Time&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;我是萌新&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;tags&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;past&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;}}{{&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;timeline&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;date&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;2025&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Second Time&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;我还是萌新&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;tags&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;now&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>日语</title>
+        <link>/p/%E6%97%A5%E8%AF%AD/</link>
+        <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>/p/%E6%97%A5%E8%AF%AD/</guid>
+        <description>&lt;h1 id=&#34;chapter-1&#34;&gt;Chapter 1
+&lt;/h1&gt;&lt;h2 id=&#34;gramma-point&#34;&gt;Gramma Point
+&lt;/h2&gt;&lt;h3 id=&#34;さん&#34;&gt;さん
+&lt;/h3&gt;&lt;p&gt;さん　先生/小姐&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1、正式场合为 全名+さん 如：木村拓哉さん&lt;/li&gt;
+&lt;li&gt;2、一般场合为 姓氏+さん 如：木村さん&lt;/li&gt;
+&lt;li&gt;3、亲密场合为 名字+さん 如：拓哉さん&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;人称&#34;&gt;人称
+&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;人称&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;称呼&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;我&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;私（わたし）普通&lt;/td&gt;
+          &lt;td&gt;僕（ぼく） 亲切&lt;/td&gt;
+          &lt;td&gt;俺（おれ）粗俗&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;你&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;あなた 爱人间&lt;/td&gt;
+          &lt;td&gt;君（きみ）亲切&lt;/td&gt;
+          &lt;td&gt;お前（おまえ）粗俗&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;他&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;彼（かれ）他&lt;/td&gt;
+          &lt;td&gt;彼女（かのじょ）她&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;它&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;誰（だれ）谁&lt;/td&gt;
+          &lt;td&gt;どなた 哪位&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;の&#34;&gt;の
+&lt;/h3&gt;&lt;h2 id=&#34;dialog&#34;&gt;Dialog
+&lt;/h2&gt;&lt;p&gt;
+&lt;div class=&#34;chat --other&#34;&gt;
+    &lt;div class=&#34;chat__inner&#34;&gt;
+        &lt;div class=&#34;chat__meta&#34;&gt;John Doe&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/div&gt;
+        &lt;div class=&#34;chat__text&#34;&gt;
+            这是左边的消息内容。
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;style&gt;
+    .chat {
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+         
+        transition: transform 0.2s;
+         
+        max-width: 80%;
+        min-width: 15%;
+    }
+    
+    .chat:hover {
+        transform: scale(1.05);
+    }
+    
+    .chat.--self {
+        text-align: left;
+        background-color: #ecf5ff;
+        color: #000000;
+        border-radius: 15px;
+        width: fit-content;
+        margin-left: auto;
+    }
+     
+    
+    .chat.--self::before {
+        content: &#34;&#34;;
+        position: absolute;
+        right: -18px;
+         
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 0 0 20px;
+        border-style: solid;
+        border-color: transparent transparent transparent #ecf5ff;
+         
+    }
+     
+    
+    .chat.--other {
+        text-align: left;
+        background-color: #ffecec;
+        color: #333;
+        border-radius: 15px;
+        position: relative;
+        width: fit-content;
+    }
+     
+    
+    .chat.--other::before {
+        content: &#34;&#34;;
+        position: absolute;
+        left: -18px;
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 20px 0 0;
+        border-style: solid;
+        border-color: transparent #ffecec transparent transparent;
+    }
+     
+    
+    .chat__meta {
+        font-weight: bold;
+        font-size: 0.67em;
+        color: #707070;
+        margin-bottom: 5px;
+    }
+     
+    
+    .chat__text {
+        font-size: 0.9em;
+        margin-left: 10px;
+        word-break: break-all;
+    }
+    
+    [data-scheme=&#34;dark&#34;] {
+        .chat.--self {
+            color: #fefefe;
+            background-color: #2a830f;
+        }
+        .chat.--self::before {
+            border-color: transparent transparent transparent #2a830f;;
+        }
+        .chat.--other {
+            color: #fefefe;
+            background-color: #1a1a1a;
+        }
+        .chat.--other::before {
+            border-color: transparent #1a1a1a transparent transparent;
+        }
+        .chat__meta {
+            color: #b1b1b1;
+        }
+    }
+&lt;/style&gt;
+
+
+&lt;div class=&#34;chat --self&#34;&gt;
+    &lt;div class=&#34;chat__inner&#34;&gt;
+        &lt;div class=&#34;chat__meta&#34; style=&#34;text-align: right;&#34;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Alice&lt;/div&gt;
+        &lt;div class=&#34;chat__text&#34;&gt;
+            这是右边的消息内容。
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;style&gt;
+    .chat {
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+         
+        transition: transform 0.2s;
+         
+        max-width: 80%;
+        min-width: 15%;
+    }
+    
+    .chat:hover {
+        transform: scale(1.05);
+    }
+    
+    .chat.--self {
+        text-align: left;
+        background-color: #ecf5ff;
+        color: #000000;
+        border-radius: 15px;
+        width: fit-content;
+        margin-left: auto;
+    }
+     
+    
+    .chat.--self::before {
+        content: &#34;&#34;;
+        position: absolute;
+        right: -18px;
+         
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 0 0 20px;
+        border-style: solid;
+        border-color: transparent transparent transparent #ecf5ff;
+         
+    }
+     
+    
+    .chat.--other {
+        text-align: left;
+        background-color: #ffecec;
+        color: #333;
+        border-radius: 15px;
+        position: relative;
+        width: fit-content;
+    }
+     
+    
+    .chat.--other::before {
+        content: &#34;&#34;;
+        position: absolute;
+        left: -18px;
+        bottom: 5px;
+        transform: translateY(-50%);
+        border-width: 15px 20px 0 0;
+        border-style: solid;
+        border-color: transparent #ffecec transparent transparent;
+    }
+     
+    
+    .chat__meta {
+        font-weight: bold;
+        font-size: 0.67em;
+        color: #707070;
+        margin-bottom: 5px;
+    }
+     
+    
+    .chat__text {
+        font-size: 0.9em;
+        margin-left: 10px;
+        word-break: break-all;
+    }
+    
+    [data-scheme=&#34;dark&#34;] {
+        .chat.--self {
+            color: #fefefe;
+            background-color: #2a830f;
+        }
+        .chat.--self::before {
+            border-color: transparent transparent transparent #2a830f;;
+        }
+        .chat.--other {
+            color: #fefefe;
+            background-color: #1a1a1a;
+        }
+        .chat.--other::before {
+            border-color: transparent #1a1a1a transparent transparent;
+        }
+        .chat__meta {
+            color: #b1b1b1;
+        }
+    }
+&lt;/style&gt;
+&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>链表</title>
         <link>/p/%E9%93%BE%E8%A1%A8/</link>
         <pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate>
@@ -1644,18 +2650,6 @@
 </description>
         </item>
         <item>
-        <title>常见的数据结构与算法</title>
-        <link>/p/%E5%B8%B8%E8%A7%81%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</link>
-        <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
-        
-        <guid>/p/%E5%B8%B8%E8%A7%81%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</guid>
-        <description>&lt;h2 id=&#34;常用的数据结构&#34;&gt;常用的数据结构
-&lt;/h2&gt;&lt;p&gt;数组、链表、队、栈、Hash、集合、树、堆。&lt;/p&gt;
-&lt;h3 id=&#34;常用的算法思想&#34;&gt;常用的算法思想
-&lt;/h3&gt;&lt;p&gt;查找、排序、双指针、递归、迭代、分治、贪心、回溯和动态规划等等&lt;/p&gt;
-</description>
-        </item>
-        <item>
         <title>计算机结构</title>
         <link>/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/</link>
         <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
@@ -2114,95 +3108,6 @@ N = M * R&lt;sup&gt;e&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>日记02</title>
-        <link>/p/%E6%97%A5%E8%AE%B002/</link>
-        <pubDate>Sat, 16 Sep 2023 13:48:38 +0800</pubDate>
-        
-        <guid>/p/%E6%97%A5%E8%AE%B002/</guid>
-        <description>&lt;h2 id=&#34;记录写博客的第二天&#34;&gt;记录写博客的第二天
-&lt;/h2&gt;&lt;p&gt;天气：晴&lt;/p&gt;
-&lt;p&gt;心情：开心&lt;/p&gt;
-&lt;h2 id=&#34;今日歌曲&#34;&gt;今日歌曲
-&lt;/h2&gt;&lt;blockquote&gt;
-&lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=330 height=86 src=&#34;//music.163.com/outchain/player?type=2&amp;id=1995116635&amp;auto=1&amp;height=66&#34;&gt;&lt;/iframe&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&#34;notice notice-warning&#34; &gt;
-    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 576 512&#34;&gt;&lt;path d=&#34;M570 440c18 32-5 72-42 72H48c-37 0-60-40-42-72L246 24c19-32 65-32 84 0l240 416zm-282-86a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;hello&lt;/p&gt;&lt;/div&gt;
-
-
-&lt;div class=&#34;notice notice-info&#34; &gt;
-    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path d=&#34;M256 8a248 248 0 100 496 248 248 0 000-496zm0 110a42 42 0 110 84 42 42 0 010-84zm56 254c0 7-5 12-12 12h-88c-7 0-12-5-12-12v-24c0-7 5-12 12-12h12v-64h-12c-7 0-12-5-12-12v-24c0-7 5-12 12-12h64c7 0 12 5 12 12v100h12c7 0 12 5 12 12v24z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;hello&lt;/p&gt;&lt;/div&gt;
-
-
-&lt;div class=&#34;notice notice-note&#34; &gt;
-    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zm-248 50a46 46 0 100 92 46 46 0 000-92zm-44-165l8 136c0 6 5 11 12 11h48c7 0 12-5 12-11l8-136c0-7-5-13-12-13h-64c-7 0-12 6-12 13z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;hello&lt;/p&gt;&lt;/div&gt;
-
-
-&lt;div class=&#34;notice notice-tip&#34; &gt;
-    &lt;div class=&#34;notice-title&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; class=&#34;icon notice-icon&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path d=&#34;M504 256a248 248 0 11-496 0 248 248 0 01496 0zM227 387l184-184c7-6 7-16 0-22l-22-23c-7-6-17-6-23 0L216 308l-70-70c-6-6-16-6-23 0l-22 23c-7 6-7 16 0 22l104 104c6 7 16 7 22 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;p&gt;hello&lt;/p&gt;&lt;/div&gt;
-
-</description>
-        </item>
-        <item>
-        <title>日记03</title>
-        <link>/p/%E6%97%A5%E8%AE%B003/</link>
-        <pubDate>Sat, 16 Sep 2023 13:48:38 +0800</pubDate>
-        
-        <guid>/p/%E6%97%A5%E8%AE%B003/</guid>
-        <description>&lt;h2 id=&#34;记录写博客的第三天&#34;&gt;记录写博客的第三天
-&lt;/h2&gt;&lt;p&gt;天气：晴&lt;/p&gt;
-&lt;p&gt;心情：伤感&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;巨人完结了！青春结束了&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;今日歌曲&#34;&gt;今日歌曲
-&lt;/h2&gt;&lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=330 height=86 src=&#34;//music.163.com/outchain/player?type=2&amp;id=1980337835&amp;auto=1&amp;height=66&#34;&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;img src=&#34;/p/%E6%97%A5%E8%AE%B003/01.jpg&#34;
-	width=&#34;832&#34;
-	height=&#34;472&#34;
-	srcset=&#34;/p/%E6%97%A5%E8%AE%B003/01_hu_35b66e5ff50fca61.jpg 480w, /p/%E6%97%A5%E8%AE%B003/01_hu_44eda1d800fa022c.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;兵长&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;176&#34;
-		data-flex-basis=&#34;423px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/p/%E6%97%A5%E8%AE%B003/02.jpg&#34;
-	width=&#34;832&#34;
-	height=&#34;471&#34;
-	srcset=&#34;/p/%E6%97%A5%E8%AE%B003/02_hu_610d3751c5a3988b.jpg 480w, /p/%E6%97%A5%E8%AE%B003/02_hu_4d612d37ca17beb9.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;调查兵团&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;176&#34;
-		data-flex-basis=&#34;423px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/p/%E6%97%A5%E8%AE%B003/03.jpg&#34;
-	width=&#34;1048&#34;
-	height=&#34;1032&#34;
-	srcset=&#34;/p/%E6%97%A5%E8%AE%B003/03_hu_6e706d07572f3fd.jpg 480w, /p/%E6%97%A5%E8%AE%B003/03_hu_43e74f73719d987b.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;会遗憾吗？&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;101&#34;
-		data-flex-basis=&#34;243px&#34;
-	
-&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
         <title>数据结构与时间复杂度</title>
         <link>/p/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/</link>
         <pubDate>Thu, 14 Sep 2023 00:00:00 +0000</pubDate>
@@ -2451,105 +3356,10 @@ N = M * R&lt;sup&gt;e&lt;/p&gt;
 &lt;li&gt;$$\frac{n(n+1)}{2}$$&lt;/li&gt;
 &lt;li&gt;$$\frac{n(n+1)(n+2)}{6}$$&lt;/li&gt;
 &lt;/ol&gt;
-</description>
-        </item>
-        <item>
-        <title>Object类的主要方法</title>
-        <link>/p/object%E7%B1%BB%E7%9A%84%E4%B8%BB%E8%A6%81%E6%96%B9%E6%B3%95/</link>
-        <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
-        
-        <guid>/p/object%E7%B1%BB%E7%9A%84%E4%B8%BB%E8%A6%81%E6%96%B9%E6%B3%95/</guid>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;Object 类的主要方法&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;NO.&lt;/th&gt;
-          &lt;th&gt;方法名称&lt;/th&gt;
-          &lt;th&gt;类型&lt;/th&gt;
-          &lt;th&gt;描述&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;1&lt;/td&gt;
-          &lt;td&gt;public Object{}&lt;/td&gt;
-          &lt;td&gt;构造&lt;/td&gt;
-          &lt;td&gt;构造方法&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;2&lt;/td&gt;
-          &lt;td&gt;public boolean equal（Object obj）&lt;/td&gt;
-          &lt;td&gt;普通&lt;/td&gt;
-          &lt;td&gt;对象比较&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;3&lt;/td&gt;
-          &lt;td&gt;public int hashcode（）&lt;/td&gt;
-          &lt;td&gt;普通&lt;/td&gt;
-          &lt;td&gt;取得 hash 值&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;4&lt;/td&gt;
-          &lt;td&gt;public String toString（）&lt;/td&gt;
-          &lt;td&gt;普通&lt;/td&gt;
-          &lt;td&gt;对象在打印时调用地址&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/blockquote&gt;
-</description>
-        </item>
-        <item>
-        <title>四种访问权限修饰符</title>
-        <link>/p/%E5%9B%9B%E7%A7%8D%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90%E4%BF%AE%E9%A5%B0%E7%AC%A6/</link>
-        <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
-        
-        <guid>/p/%E5%9B%9B%E7%A7%8D%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90%E4%BF%AE%E9%A5%B0%E7%AC%A6/</guid>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;java 的四种访问权限修饰符&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;修饰符&lt;/th&gt;
-          &lt;th&gt;类内部&lt;/th&gt;
-          &lt;th&gt;同一个包&lt;/th&gt;
-          &lt;th&gt;子类&lt;/th&gt;
-          &lt;th&gt;同一个包&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;private&lt;/td&gt;
-          &lt;td&gt;Yes&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;default&lt;/td&gt;
-          &lt;td&gt;Yes&lt;/td&gt;
-          &lt;td&gt;Yes&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;protected&lt;/td&gt;
-          &lt;td&gt;Yes&lt;/td&gt;
-          &lt;td&gt;Yes&lt;/td&gt;
-          &lt;td&gt;Yes&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;public&lt;/td&gt;
-          &lt;td&gt;Yes&lt;/td&gt;
-          &lt;td&gt;Yes&lt;/td&gt;
-          &lt;td&gt;Yes&lt;/td&gt;
-          &lt;td&gt;Yes&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/blockquote&gt;
+&lt;h2 id=&#34;常用的数据结构&#34;&gt;常用的数据结构
+&lt;/h2&gt;&lt;p&gt;数组、链表、队、栈、Hash、集合、树、堆。&lt;/p&gt;
+&lt;h3 id=&#34;常用的算法思想&#34;&gt;常用的算法思想
+&lt;/h3&gt;&lt;p&gt;查找、排序、双指针、递归、迭代、分治、贪心、回溯和动态规划等等&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -2686,46 +3496,70 @@ N = M * R&lt;sup&gt;e&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>JDK中主要的包介绍</title>
-        <link>/p/jdk%E4%B8%AD%E4%B8%BB%E8%A6%81%E7%9A%84%E5%8C%85%E4%BB%8B%E7%BB%8D/</link>
-        <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
-        
-        <guid>/p/jdk%E4%B8%AD%E4%B8%BB%E8%A6%81%E7%9A%84%E5%8C%85%E4%BB%8B%E7%BB%8D/</guid>
-        <description>&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;java.lang java 语言的核心类 如 String Math Integer&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;java.net 网络操作的类和接口&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;java.io 输入输出类&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;ava.util 实用工具类，定义系统特性，接口集合框架&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;java.text java 格式化相关类&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;java.sql java 进行 JDBC 相关类，接口&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;java.swt 抽象窗口工具集类 GUI&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;java.applet applet 运行类&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-</description>
-        </item>
-        <item>
         <title>JetBrains系列软件的使用心得</title>
         <link>/p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</link>
         <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
         
         <guid>/p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</guid>
-        <description>&lt;img src="/p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/02.png" alt="Featured image of post JetBrains系列软件的使用心得" /&gt;&lt;h2 id=&#34;常用快捷键&#34;&gt;常用快捷键
+        <description>&lt;img src="/p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/02.png" alt="Featured image of post JetBrains系列软件的使用心得" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;JetBrains 是一家专注于开发者工具的公司，旗下产品基于自研的 IntelliJ Platform 内核，覆盖了绝大多数主流编程语言和开发场景，可分为 全栈 / 多语言 IDE、单一语言专用 IDE、辅助开发工具 三大类。&lt;br&gt;
+JetBrains官网 &lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.jetbrains.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;系列软件介绍&#34;&gt;系列软件介绍
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;工具名称&lt;/th&gt;
+          &lt;th&gt;主打语言&lt;/th&gt;
+          &lt;th&gt;核心应用场景&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;IntelliJ IDEA&lt;/td&gt;
+          &lt;td&gt;Java&lt;/td&gt;
+          &lt;td&gt;Java 企业级应用开发、Android 开发、Kotlin 开发、Spring Boot 等&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;PyCharm&lt;/td&gt;
+          &lt;td&gt;Python&lt;/td&gt;
+          &lt;td&gt;数据分析、人工智能、Web 开发（Django/Flask）、自动化脚本&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;WebStorm&lt;/td&gt;
+          &lt;td&gt;前端技术栈&lt;/td&gt;
+          &lt;td&gt;JavaScript/TypeScript、Vue/React/Angular 开发，HTML/CSS 优化，前端工程化&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;GoLand&lt;/td&gt;
+          &lt;td&gt;Go&lt;/td&gt;
+          &lt;td&gt;Go 语言后端开发、云原生（K8s 相关）、微服务&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;PhpStorm&lt;/td&gt;
+          &lt;td&gt;PHP&lt;/td&gt;
+          &lt;td&gt;Laravel/Symfony/Yii 等框架开发，WordPress 插件开发，PHP+MySQL 全栈&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;RubyMine&lt;/td&gt;
+          &lt;td&gt;Ruby/Rails&lt;/td&gt;
+          &lt;td&gt;Ruby on Rails 框架开发，Web 应用快速构建&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;CLion&lt;/td&gt;
+          &lt;td&gt;C/C++&lt;/td&gt;
+          &lt;td&gt;跨平台 C/C++ 开发，支持 CMake、Qt 框架、嵌入式开发&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;DataGrip&lt;/td&gt;
+          &lt;td&gt;数据库管理&lt;/td&gt;
+          &lt;td&gt;通用数据库工具，支持 MySQL、PostgreSQL、Oracle、SQL Server 等，可视化操作 + SQL 编辑优化&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;常用快捷键&#34;&gt;常用快捷键
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;&lt;/p&gt;
 &lt;table&gt;
@@ -2737,12 +3571,16 @@ N = M * R&lt;sup&gt;e&lt;/p&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
+          &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;E&lt;/nkbd&gt;&lt;/td&gt;
+          &lt;td&gt;查看最近打开的文件&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
           &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;D&lt;/nkbd&gt;&lt;/td&gt;
           &lt;td&gt;复制当前行&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;X&lt;/nkbd&gt;&lt;/td&gt;
-          &lt;td&gt;删除当前行&lt;/td&gt;
+          &lt;td&gt;剪切当前行&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;W&lt;/nkbd&gt;&lt;/td&gt;
@@ -2750,7 +3588,11 @@ N = M * R&lt;sup&gt;e&lt;/p&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;O&lt;/nkbd&gt;&lt;/td&gt;
-          &lt;td&gt;重写方法&lt;/td&gt;
+          &lt;td&gt;重写父类方法&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;I&lt;/nkbd&gt;&lt;/td&gt;
+          &lt;td&gt;实现接口方法&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;F7&lt;/nkbd&gt;&lt;/td&gt;
@@ -2778,23 +3620,19 @@ N = M * R&lt;sup&gt;e&lt;/p&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;shift+F6&lt;/td&gt;
-          &lt;td&gt;快速更改&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Shift&lt;/nkbd&gt;+&lt;nkbd&gt;F6&lt;/td&gt;
+          &lt;td&gt;更改命名&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;shift+F10&lt;/td&gt;
-          &lt;td&gt;Run&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Shift&lt;/nkbd&gt;+&lt;nkbd&gt;F8&lt;/td&gt;
+          &lt;td&gt;调试时步出（跳出当前方法）&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;shift+F9&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Shift&lt;/nkbd&gt;+&lt;nkbd&gt;F9&lt;/td&gt;
           &lt;td&gt;Debug&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;shift+F11&lt;/td&gt;
-          &lt;td&gt;弹出书签显示层&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shift+Tab&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Shift&lt;/nkbd&gt;+&lt;nkbd&gt;Tab&lt;/td&gt;
           &lt;td&gt;取消缩进&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
@@ -2811,31 +3649,27 @@ N = M * R&lt;sup&gt;e&lt;/p&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td&gt;ctrl+Alt+L&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;Alt&lt;/nkbd&gt;+&lt;nkbd&gt;L&lt;/td&gt;
           &lt;td&gt;格式化代码&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;ctrl+Alt+v&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;Alt&lt;/nkbd&gt;+&lt;nkbd&gt;V&lt;/nkbd&gt;&lt;/td&gt;
           &lt;td&gt;引入变量&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;ctrl+Alt+t&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;Alt&lt;/nkbd&gt;+&lt;nkbd&gt;T&lt;/nkbd&gt;&lt;/td&gt;
           &lt;td&gt;Surround With 快捷键&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;ctrl+Alt+O&lt;/td&gt;
-          &lt;td&gt;优化导入的类，可以对当前文件和整个包目录使用&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;Alt&lt;/nkbd&gt;+&lt;nkbd&gt;S&lt;/nkbd&gt;&lt;/td&gt;
+          &lt;td&gt;打开系统设置&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;ctrl+Alt+S&lt;/td&gt;
-          &lt;td&gt;打开 IDEA 系统设置&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;ctrl+Alt+Enter&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;Alt&lt;/nkbd&gt;+&lt;nkbd&gt;Enter&lt;/nkbd&gt;&lt;/td&gt;
           &lt;td&gt;光标所在行上空出一行，光标定位到新行&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;ctrl+Alt+←/→&lt;/td&gt;
+          &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;Alt&lt;/nkbd&gt;+&lt;nkbd&gt;←&lt;/nkbd&gt;/&lt;nkbd&gt;→&lt;/nkbd&gt;&lt;/td&gt;
           &lt;td&gt;退回/前进到上一个操作的地方&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
@@ -2858,6 +3692,10 @@ N = M * R&lt;sup&gt;e&lt;/p&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;Shift&lt;/nkbd&gt;+&lt;nkbd&gt;w&lt;/nkbd&gt;&lt;/td&gt;
           &lt;td&gt;递进式选中代码（从光标处向内扩展）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;Shift&lt;/nkbd&gt;+&lt;nkbd&gt;Enter&lt;/nkbd&gt;&lt;/td&gt;
+          &lt;td&gt;光标所在行下空出一行，光标定位到新行&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;nkbd&gt;Ctrl&lt;/nkbd&gt;+&lt;nkbd&gt;Shift&lt;/nkbd&gt;+&lt;nkbd&gt;↑&lt;/nkbd&gt;/&lt;nkbd&gt;↓&lt;/nkbd&gt;&lt;/td&gt;
@@ -2908,12 +3746,17 @@ N = M * R&lt;sup&gt;e&lt;/p&gt;
           &lt;td&gt;&lt;nkbd&gt;F9&lt;/nkbd&gt;&lt;/td&gt;
           &lt;td&gt;调试时继续执行到下一个断点&lt;/td&gt;
       &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;nkbd&gt;Alt&lt;/nkbd&gt;+&lt;nkbd&gt;F7&lt;/nkbd&gt;&lt;/td&gt;
+          &lt;td&gt;查看当前方法的调用者&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;nkbd&gt;Alt&lt;/nkbd&gt;+&lt;nkbd&gt;Ins&lt;/nkbd&gt;&lt;/td&gt;
+          &lt;td&gt;打开生成菜单（可生成 getter/setter、构造方法、重写方法等）&lt;/td&gt;
+      &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;jetbrains-系列软件的常见图标&#34;&gt;JetBrains 系列软件的常见图标
-&lt;/h2&gt;&lt;p&gt;图标地址 &lt;a class=&#34;link&#34; href=&#34;https://intellij-icons.jetbrains.design/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://intellij-icons.jetbrains.design/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;插件推荐&#34;&gt;插件推荐
 &lt;/h2&gt;&lt;table&gt;
   &lt;thead&gt;
@@ -2941,7 +3784,7 @@ N = M * R&lt;sup&gt;e&lt;/p&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;AI assistant&lt;/td&gt;
-          &lt;td&gt;因为插件类型还是以QA为主，所以随便选一家的即可 我一直用的是阿里的 LingMa&lt;/td&gt;
+          &lt;td&gt;因为插件类型的AI还是以QA为主，所以随便选一家的即可 我一直用的是阿里的 LingMa&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;Nyan Progress Bar&lt;/td&gt;
@@ -2949,65 +3792,22 @@ N = M * R&lt;sup&gt;e&lt;/p&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-</description>
-        </item>
-        <item>
-        <title>面向对象</title>
-        <link>/p/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</link>
-        <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
-        
-        <guid>/p/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</guid>
-        <description>&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;java 类及类的成员
-面向对象的三大特征
-其他关键字&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-</description>
-        </item>
-        <item>
-        <title>数组</title>
-        <link>/p/%E6%95%B0%E7%BB%84/</link>
-        <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
-        
-        <guid>/p/%E6%95%B0%E7%BB%84/</guid>
-        <description>&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;一维数组
-多维数组&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-</description>
-        </item>
-        <item>
-        <title>运算符</title>
-        <link>/p/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
-        <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
-        
-        <guid>/p/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
-        <description>&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;算数运算符
-逻辑运算符
-位运算符&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-</description>
-        </item>
-        <item>
-        <title>运算符</title>
-        <link>/p/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
-        <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
-        
-        <guid>/p/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
-        <description>&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;算数运算符
-逻辑运算符
-位运算符&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
+&lt;h2 id=&#34;小技巧&#34;&gt;小技巧
+&lt;/h2&gt;&lt;p&gt;搜索栏 正则表达式
+如图：
+&lt;img src=&#34;/p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/03.png&#34;
+	width=&#34;351&#34;
+	height=&#34;267&#34;
+	srcset=&#34;/p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/03_hu_b5616743ef55fde5.png 480w, /p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/03_hu_71be2f6a1f243106.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;131&#34;
+		data-flex-basis=&#34;315px&#34;
+	
+&gt;
+当我想搜索 领取xx奖励,可以在搜索栏 按下 alt+x 开启正则表达式 并输入(.*)表示此处可以有任意字符。&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -4276,6 +5076,513 @@ N = M * R&lt;sup&gt;e&lt;/p&gt;
             &lt;div class=&#34;timeline__title&#34;&gt;volumeControl&lt;/div&gt;
         &lt;div class=&#34;timeline__description&#34;&gt;
             添加播放器的音量控制.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .timeline {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .timeline__row {
+        display: flex;
+        padding-left: 4%;
+        height: 90px;
+    }
+    
+    .timeline__time {
+        flex: 0 0 110px;
+        color: #bbbaba;
+        font-size: 17px;
+        text-transform: uppercase;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    
+    .timeline__time-text {
+        margin: 0;
+    }
+    
+    .timeline__split-line {
+        position: absolute;
+        top: 0.5rem;
+        right: -20px;
+        height: 100%;
+        width: 2px;
+        background-color: #84c4e240;
+        z-index: 0;
+    }
+    
+    .timeline__split-line:before {
+        content: &#34;&#34;;
+        position: absolute;
+        top: 24%;
+        right: -4px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: #c9e5f2;
+        box-shadow: 0 0 0 4px var(--theme);
+        border-radius: 50%;
+        border: 0px solid #84c4e2;
+        z-index: -1;
+    }
+    
+    .timeline__content {
+        flex: 1;
+        margin-left: 4.5rem;
+        padding: 0.5rem 0 1.2rem 0;
+    }
+    
+    .timeline__title {
+        margin: 0;
+        margin-bottom: 2px;
+        padding-top: 3px;
+        margin-left: 0.5rem;
+        color: var(--content);
+        font-family: var(--font-family-teshu);
+        font-size: 19px;
+        font-weight: 600;
+        width: fit-content;
+        display: inline-block;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__tags {
+        display: inline-block;
+        padding: 0;
+        margin-left: 0.3rem;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    .timeline__tag {
+        display: inline-block;
+        color: var(--secondary);
+        background-color: #84c4e230;
+        border: 1.5px solid #84c4e230;
+        border-radius: 999px;
+        padding: 0rem 0.5rem;
+        font-size: 12px;
+        white-space: nowrap;
+        line-height: 1.4rem;
+        opacity: 0.8;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__description {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #bbbaba;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0.5rem 0 0.4rem 1.5rem;
+         
+    }
+     
+    
+    .timeline__tag-style {
+        background-color: #c581da;
+         
+        border-color: #c581da;
+         
+        color: #FFFFFF;
+         
+    }
+     
+    
+    .timeline__tag-article {
+        background-color: #92d392;
+         
+        border-color: #92d392;
+         
+        color: #000000;
+         
+    }
+     
+    
+    .timeline__tag-page {
+        background-color: #707070;
+         
+        border-color: #707070;
+         
+        color: #FFFFFF;
+         
+    }
+    
+    @media screen and (max-width: 768px) {
+        .timeline__time {
+            font-size: 14px;
+             
+        }
+        .timeline__title {
+            font-size: 16px;
+             
+        }
+        .timeline__description {
+            font-size: 14px;
+             
+        }
+    }
+&lt;/style&gt;
+
+&lt;div class=&#34;timeline__row&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;
+        &lt;div class=&#34;timeline__time&#34;&gt;2026-01-12&lt;/div&gt;
+        &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;timeline__content&#34;&gt;
+        &lt;div class=&#34;timeline__tags&#34;&gt;
+            &lt;span class=&#34;timeline__tag&#34;&gt;fix&lt;/span&gt;
+        &lt;/div&gt;
+            &lt;div class=&#34;timeline__title&#34;&gt;music play&lt;/div&gt;
+        &lt;div class=&#34;timeline__description&#34;&gt;
+            修复播放器主题切换歌单时出现的bug.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .timeline {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .timeline__row {
+        display: flex;
+        padding-left: 4%;
+        height: 90px;
+    }
+    
+    .timeline__time {
+        flex: 0 0 110px;
+        color: #bbbaba;
+        font-size: 17px;
+        text-transform: uppercase;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    
+    .timeline__time-text {
+        margin: 0;
+    }
+    
+    .timeline__split-line {
+        position: absolute;
+        top: 0.5rem;
+        right: -20px;
+        height: 100%;
+        width: 2px;
+        background-color: #84c4e240;
+        z-index: 0;
+    }
+    
+    .timeline__split-line:before {
+        content: &#34;&#34;;
+        position: absolute;
+        top: 24%;
+        right: -4px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: #c9e5f2;
+        box-shadow: 0 0 0 4px var(--theme);
+        border-radius: 50%;
+        border: 0px solid #84c4e2;
+        z-index: -1;
+    }
+    
+    .timeline__content {
+        flex: 1;
+        margin-left: 4.5rem;
+        padding: 0.5rem 0 1.2rem 0;
+    }
+    
+    .timeline__title {
+        margin: 0;
+        margin-bottom: 2px;
+        padding-top: 3px;
+        margin-left: 0.5rem;
+        color: var(--content);
+        font-family: var(--font-family-teshu);
+        font-size: 19px;
+        font-weight: 600;
+        width: fit-content;
+        display: inline-block;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__tags {
+        display: inline-block;
+        padding: 0;
+        margin-left: 0.3rem;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    .timeline__tag {
+        display: inline-block;
+        color: var(--secondary);
+        background-color: #84c4e230;
+        border: 1.5px solid #84c4e230;
+        border-radius: 999px;
+        padding: 0rem 0.5rem;
+        font-size: 12px;
+        white-space: nowrap;
+        line-height: 1.4rem;
+        opacity: 0.8;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__description {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #bbbaba;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0.5rem 0 0.4rem 1.5rem;
+         
+    }
+     
+    
+    .timeline__tag-style {
+        background-color: #c581da;
+         
+        border-color: #c581da;
+         
+        color: #FFFFFF;
+         
+    }
+     
+    
+    .timeline__tag-article {
+        background-color: #92d392;
+         
+        border-color: #92d392;
+         
+        color: #000000;
+         
+    }
+     
+    
+    .timeline__tag-page {
+        background-color: #707070;
+         
+        border-color: #707070;
+         
+        color: #FFFFFF;
+         
+    }
+    
+    @media screen and (max-width: 768px) {
+        .timeline__time {
+            font-size: 14px;
+             
+        }
+        .timeline__title {
+            font-size: 16px;
+             
+        }
+        .timeline__description {
+            font-size: 14px;
+             
+        }
+    }
+&lt;/style&gt;
+
+&lt;div class=&#34;timeline__row&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;
+        &lt;div class=&#34;timeline__time&#34;&gt;2026-01-15&lt;/div&gt;
+        &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;timeline__content&#34;&gt;
+        &lt;div class=&#34;timeline__tags&#34;&gt;
+            &lt;span class=&#34;timeline__tag&#34;&gt;refactor&lt;/span&gt;
+        &lt;/div&gt;
+            &lt;div class=&#34;timeline__title&#34;&gt;shortCode&lt;/div&gt;
+        &lt;div class=&#34;timeline__description&#34;&gt;
+            整理博客中使用到的短代码.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .timeline {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .timeline__row {
+        display: flex;
+        padding-left: 4%;
+        height: 90px;
+    }
+    
+    .timeline__time {
+        flex: 0 0 110px;
+        color: #bbbaba;
+        font-size: 17px;
+        text-transform: uppercase;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    
+    .timeline__time-text {
+        margin: 0;
+    }
+    
+    .timeline__split-line {
+        position: absolute;
+        top: 0.5rem;
+        right: -20px;
+        height: 100%;
+        width: 2px;
+        background-color: #84c4e240;
+        z-index: 0;
+    }
+    
+    .timeline__split-line:before {
+        content: &#34;&#34;;
+        position: absolute;
+        top: 24%;
+        right: -4px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: #c9e5f2;
+        box-shadow: 0 0 0 4px var(--theme);
+        border-radius: 50%;
+        border: 0px solid #84c4e2;
+        z-index: -1;
+    }
+    
+    .timeline__content {
+        flex: 1;
+        margin-left: 4.5rem;
+        padding: 0.5rem 0 1.2rem 0;
+    }
+    
+    .timeline__title {
+        margin: 0;
+        margin-bottom: 2px;
+        padding-top: 3px;
+        margin-left: 0.5rem;
+        color: var(--content);
+        font-family: var(--font-family-teshu);
+        font-size: 19px;
+        font-weight: 600;
+        width: fit-content;
+        display: inline-block;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__tags {
+        display: inline-block;
+        padding: 0;
+        margin-left: 0.3rem;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    .timeline__tag {
+        display: inline-block;
+        color: var(--secondary);
+        background-color: #84c4e230;
+        border: 1.5px solid #84c4e230;
+        border-radius: 999px;
+        padding: 0rem 0.5rem;
+        font-size: 12px;
+        white-space: nowrap;
+        line-height: 1.4rem;
+        opacity: 0.8;
+        vertical-align: middle;
+         
+    }
+    
+    .timeline__description {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #bbbaba;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0.5rem 0 0.4rem 1.5rem;
+         
+    }
+     
+    
+    .timeline__tag-style {
+        background-color: #c581da;
+         
+        border-color: #c581da;
+         
+        color: #FFFFFF;
+         
+    }
+     
+    
+    .timeline__tag-article {
+        background-color: #92d392;
+         
+        border-color: #92d392;
+         
+        color: #000000;
+         
+    }
+     
+    
+    .timeline__tag-page {
+        background-color: #707070;
+         
+        border-color: #707070;
+         
+        color: #FFFFFF;
+         
+    }
+    
+    @media screen and (max-width: 768px) {
+        .timeline__time {
+            font-size: 14px;
+             
+        }
+        .timeline__title {
+            font-size: 16px;
+             
+        }
+        .timeline__description {
+            font-size: 14px;
+             
+        }
+    }
+&lt;/style&gt;
+
+&lt;div class=&#34;timeline__row&#34;&gt;
+    &lt;div class=&#34;timeline__time&#34;&gt;
+        &lt;div class=&#34;timeline__time&#34;&gt;2026-01-26&lt;/div&gt;
+        &lt;div class=&#34;timeline__split-line&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;timeline__content&#34;&gt;
+        &lt;div class=&#34;timeline__tags&#34;&gt;
+            &lt;span class=&#34;timeline__tag&#34;&gt;feat&lt;/span&gt;
+        &lt;/div&gt;
+            &lt;div class=&#34;timeline__title&#34;&gt;musciPlayer&lt;/div&gt;
+        &lt;div class=&#34;timeline__description&#34;&gt;
+            添加播放器的播放条进度控制.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;

@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="常用快捷键\rCtrl\n快捷键 介绍 Ctrl+D 复制当前行 Ctrl+X 删除当前行 Ctrl+W 递进式选中代码（从光标处向外扩展） Ctrl+O 重写方法 Ctrl+F7 高亮当前方法中的所选内容 Ctrl+F8 设置断点 Ctrl+F9 重新编译当前文件 Shift\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="前言\rJetBrains 是一家专注于开发者工具的公司，旗下产品基于自研的 IntelliJ Platform 内核，覆盖了绝大多数主流编程语言和开发场景，可分为 全栈 / 多语言 IDE、单一语言专用 IDE、辅助开发工具 三大类。\nJetBrains官网 https://www.jetbrains.com/\n">
 <title>JetBrains系列软件的使用心得</title>
 
 <link rel='canonical' href='/p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/'>
 
-<link rel="stylesheet" href="/scss/style.min.c5e7210b00fe97308455ad6d87aac8bb4d96d13dc007857f3fa68623289552f8.css"><meta property='og:title' content="JetBrains系列软件的使用心得">
-<meta property='og:description' content="常用快捷键\rCtrl\n快捷键 介绍 Ctrl+D 复制当前行 Ctrl+X 删除当前行 Ctrl+W 递进式选中代码（从光标处向外扩展） Ctrl+O 重写方法 Ctrl+F7 高亮当前方法中的所选内容 Ctrl+F8 设置断点 Ctrl+F9 重新编译当前文件 Shift\n">
+<link rel="stylesheet" href="/scss/style.min.368c25e3980b80a429c8a543366c37e483caf751277ff68cd1f2abe902c3b4cc.css"><meta property='og:title' content="JetBrains系列软件的使用心得">
+<meta property='og:description' content="前言\rJetBrains 是一家专注于开发者工具的公司，旗下产品基于自研的 IntelliJ Platform 内核，覆盖了绝大多数主流编程语言和开发场景，可分为 全栈 / 多语言 IDE、单一语言专用 IDE、辅助开发工具 三大类。\nJetBrains官网 https://www.jetbrains.com/\n">
 <meta property='og:url' content='/p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/'>
 <meta property='og:site_name' content='老王同学'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-09-10T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-09-10T00:00:00&#43;00:00'/><meta property='og:image' content='/p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/02.png' />
 <meta name="twitter:title" content="JetBrains系列软件的使用心得">
-<meta name="twitter:description" content="常用快捷键\rCtrl\n快捷键 介绍 Ctrl+D 复制当前行 Ctrl+X 删除当前行 Ctrl+W 递进式选中代码（从光标处向外扩展） Ctrl+O 重写方法 Ctrl+F7 高亮当前方法中的所选内容 Ctrl+F8 设置断点 Ctrl+F9 重新编译当前文件 Shift\n"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="前言\rJetBrains 是一家专注于开发者工具的公司，旗下产品基于自研的 IntelliJ Platform 内核，覆盖了绝大多数主流编程语言和开发场景，可分为 全栈 / 多语言 IDE、单一语言专用 IDE、辅助开发工具 三大类。\nJetBrains官网 https://www.jetbrains.com/\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='/p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/02.png' />
     <link rel="shortcut icon" href="/img/favicon.png" />
 
@@ -233,7 +233,7 @@
 
 
 
-                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                            <select name="language" title="language" onchange="if (window.pjax) { window.pjax.loadUrl(this.selectedOptions[0].value); } else { window.location.href = this.selectedOptions[0].value; }">
                                 
                                     <option value="/" selected>中文</option>
                                 
@@ -291,7 +291,7 @@
     
     <header class="article-category">
         
-            <a href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" style="background-color: #2a9d8f; color: #fff;">
+            <a href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" >
                 开发工具
             </a>
         
@@ -337,7 +337,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 2 分钟
+                    阅读时长: 3 分钟
                 </time>
             </div>
         
@@ -352,7 +352,65 @@
     <section class="article-content">
     
     
-    <h2 id="常用快捷键">常用快捷键
+    <h2 id="前言">前言
+</h2><p>JetBrains 是一家专注于开发者工具的公司，旗下产品基于自研的 IntelliJ Platform 内核，覆盖了绝大多数主流编程语言和开发场景，可分为 全栈 / 多语言 IDE、单一语言专用 IDE、辅助开发工具 三大类。<br>
+JetBrains官网 <a class="link" href="https://www.jetbrains.com/"  target="_blank" rel="noopener"
+    >https://www.jetbrains.com/</a></p>
+<h2 id="系列软件介绍">系列软件介绍
+</h2><blockquote>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>工具名称</th>
+          <th>主打语言</th>
+          <th>核心应用场景</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>IntelliJ IDEA</td>
+          <td>Java</td>
+          <td>Java 企业级应用开发、Android 开发、Kotlin 开发、Spring Boot 等</td>
+      </tr>
+      <tr>
+          <td>PyCharm</td>
+          <td>Python</td>
+          <td>数据分析、人工智能、Web 开发（Django/Flask）、自动化脚本</td>
+      </tr>
+      <tr>
+          <td>WebStorm</td>
+          <td>前端技术栈</td>
+          <td>JavaScript/TypeScript、Vue/React/Angular 开发，HTML/CSS 优化，前端工程化</td>
+      </tr>
+      <tr>
+          <td>GoLand</td>
+          <td>Go</td>
+          <td>Go 语言后端开发、云原生（K8s 相关）、微服务</td>
+      </tr>
+      <tr>
+          <td>PhpStorm</td>
+          <td>PHP</td>
+          <td>Laravel/Symfony/Yii 等框架开发，WordPress 插件开发，PHP+MySQL 全栈</td>
+      </tr>
+      <tr>
+          <td>RubyMine</td>
+          <td>Ruby/Rails</td>
+          <td>Ruby on Rails 框架开发，Web 应用快速构建</td>
+      </tr>
+      <tr>
+          <td>CLion</td>
+          <td>C/C++</td>
+          <td>跨平台 C/C++ 开发，支持 CMake、Qt 框架、嵌入式开发</td>
+      </tr>
+      <tr>
+          <td>DataGrip</td>
+          <td>数据库管理</td>
+          <td>通用数据库工具，支持 MySQL、PostgreSQL、Oracle、SQL Server 等，可视化操作 + SQL 编辑优化</td>
+      </tr>
+  </tbody>
+</table></div>
+</blockquote>
+<h2 id="常用快捷键">常用快捷键
 </h2><blockquote>
 <p><nkbd>Ctrl</nkbd></p>
 <div class="table-wrapper"><table>
@@ -364,12 +422,16 @@
   </thead>
   <tbody>
       <tr>
+          <td><nkbd>Ctrl</nkbd>+<nkbd>E</nkbd></td>
+          <td>查看最近打开的文件</td>
+      </tr>
+      <tr>
           <td><nkbd>Ctrl</nkbd>+<nkbd>D</nkbd></td>
           <td>复制当前行</td>
       </tr>
       <tr>
           <td><nkbd>Ctrl</nkbd>+<nkbd>X</nkbd></td>
-          <td>删除当前行</td>
+          <td>剪切当前行</td>
       </tr>
       <tr>
           <td><nkbd>Ctrl</nkbd>+<nkbd>W</nkbd></td>
@@ -377,7 +439,11 @@
       </tr>
       <tr>
           <td><nkbd>Ctrl</nkbd>+<nkbd>O</nkbd></td>
-          <td>重写方法</td>
+          <td>重写父类方法</td>
+      </tr>
+      <tr>
+          <td><nkbd>Ctrl</nkbd>+<nkbd>I</nkbd></td>
+          <td>实现接口方法</td>
       </tr>
       <tr>
           <td><nkbd>Ctrl</nkbd>+<nkbd>F7</nkbd></td>
@@ -405,23 +471,19 @@
   </thead>
   <tbody>
       <tr>
-          <td>shift+F6</td>
-          <td>快速更改</td>
+          <td><nkbd>Shift</nkbd>+<nkbd>F6</td>
+          <td>更改命名</td>
       </tr>
       <tr>
-          <td>shift+F10</td>
-          <td>Run</td>
+          <td><nkbd>Shift</nkbd>+<nkbd>F8</td>
+          <td>调试时步出（跳出当前方法）</td>
       </tr>
       <tr>
-          <td>shift+F9</td>
+          <td><nkbd>Shift</nkbd>+<nkbd>F9</td>
           <td>Debug</td>
       </tr>
       <tr>
-          <td>shift+F11</td>
-          <td>弹出书签显示层</td>
-      </tr>
-      <tr>
-          <td>shift+Tab</td>
+          <td><nkbd>Shift</nkbd>+<nkbd>Tab</td>
           <td>取消缩进</td>
       </tr>
   </tbody>
@@ -438,31 +500,27 @@
   </thead>
   <tbody>
       <tr>
-          <td>ctrl+Alt+L</td>
+          <td><nkbd>Ctrl</nkbd>+<nkbd>Alt</nkbd>+<nkbd>L</td>
           <td>格式化代码</td>
       </tr>
       <tr>
-          <td>ctrl+Alt+v</td>
+          <td><nkbd>Ctrl</nkbd>+<nkbd>Alt</nkbd>+<nkbd>V</nkbd></td>
           <td>引入变量</td>
       </tr>
       <tr>
-          <td>ctrl+Alt+t</td>
+          <td><nkbd>Ctrl</nkbd>+<nkbd>Alt</nkbd>+<nkbd>T</nkbd></td>
           <td>Surround With 快捷键</td>
       </tr>
       <tr>
-          <td>ctrl+Alt+O</td>
-          <td>优化导入的类，可以对当前文件和整个包目录使用</td>
+          <td><nkbd>Ctrl</nkbd>+<nkbd>Alt</nkbd>+<nkbd>S</nkbd></td>
+          <td>打开系统设置</td>
       </tr>
       <tr>
-          <td>ctrl+Alt+S</td>
-          <td>打开 IDEA 系统设置</td>
-      </tr>
-      <tr>
-          <td>ctrl+Alt+Enter</td>
+          <td><nkbd>Ctrl</nkbd>+<nkbd>Alt</nkbd>+<nkbd>Enter</nkbd></td>
           <td>光标所在行上空出一行，光标定位到新行</td>
       </tr>
       <tr>
-          <td>ctrl+Alt+←/→</td>
+          <td><nkbd>Ctrl</nkbd>+<nkbd>Alt</nkbd>+<nkbd>←</nkbd>/<nkbd>→</nkbd></td>
           <td>退回/前进到上一个操作的地方</td>
       </tr>
   </tbody>
@@ -485,6 +543,10 @@
       <tr>
           <td><nkbd>Ctrl</nkbd>+<nkbd>Shift</nkbd>+<nkbd>w</nkbd></td>
           <td>递进式选中代码（从光标处向内扩展）</td>
+      </tr>
+      <tr>
+          <td><nkbd>Ctrl</nkbd>+<nkbd>Shift</nkbd>+<nkbd>Enter</nkbd></td>
+          <td>光标所在行下空出一行，光标定位到新行</td>
       </tr>
       <tr>
           <td><nkbd>Ctrl</nkbd>+<nkbd>Shift</nkbd>+<nkbd>↑</nkbd>/<nkbd>↓</nkbd></td>
@@ -535,12 +597,17 @@
           <td><nkbd>F9</nkbd></td>
           <td>调试时继续执行到下一个断点</td>
       </tr>
+      <tr>
+          <td><nkbd>Alt</nkbd>+<nkbd>F7</nkbd></td>
+          <td>查看当前方法的调用者</td>
+      </tr>
+      <tr>
+          <td><nkbd>Alt</nkbd>+<nkbd>Ins</nkbd></td>
+          <td>打开生成菜单（可生成 getter/setter、构造方法、重写方法等）</td>
+      </tr>
   </tbody>
 </table></div>
 </blockquote>
-<h2 id="jetbrains-系列软件的常见图标">JetBrains 系列软件的常见图标
-</h2><p>图标地址 <a class="link" href="https://intellij-icons.jetbrains.design/"  target="_blank" rel="noopener"
-    >https://intellij-icons.jetbrains.design/</a></p>
 <h2 id="插件推荐">插件推荐
 </h2><div class="table-wrapper"><table>
   <thead>
@@ -568,7 +635,7 @@
       </tr>
       <tr>
           <td>AI assistant</td>
-          <td>因为插件类型还是以QA为主，所以随便选一家的即可 我一直用的是阿里的 LingMa</td>
+          <td>因为插件类型的AI还是以QA为主，所以随便选一家的即可 我一直用的是阿里的 LingMa</td>
       </tr>
       <tr>
           <td>Nyan Progress Bar</td>
@@ -576,6 +643,22 @@
       </tr>
   </tbody>
 </table></div>
+<h2 id="小技巧">小技巧
+</h2><p>搜索栏 正则表达式
+如图：
+<img src="/p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/03.png"
+	width="351"
+	height="267"
+	srcset="/p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/03_hu_b5616743ef55fde5.png 480w, /p/jetbrains%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/03_hu_71be2f6a1f243106.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="131"
+		data-flex-basis="315px"
+	
+>
+当我想搜索 领取xx奖励,可以在搜索栏 按下 alt+x 开启正则表达式 并输入(.*)表示此处可以有任意字符。</p>
 
 </section>
 
@@ -763,22 +846,8 @@
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
 
-        <p>发布了 24 篇文章 | 共 9801 字</p>
+        <p>发布了 16 篇文章 | 共 10658 字</p>
     </section>
 </footer>
 
@@ -984,9 +1053,11 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#系列软件介绍">系列软件介绍</a></li>
     <li><a href="#常用快捷键">常用快捷键</a></li>
-    <li><a href="#jetbrains-系列软件的常见图标">JetBrains 系列软件的常见图标</a></li>
     <li><a href="#插件推荐">插件推荐</a></li>
+    <li><a href="#小技巧">小技巧</a></li>
   </ol>
 </nav>
         </div>
@@ -1012,24 +1083,16 @@
 
     <div class="tagCloud-tags">
         
-            <a href="/categories/javase/" class="font_size_7">
-                JavaSE
-            </a>
-        
             <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" class="font_size_5">
                 计算机基础
-            </a>
-        
-            <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" class="font_size_3">
-                数据结构与算法
             </a>
         
             <a href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" class="font_size_2">
                 开发工具
             </a>
         
-            <a href="/categories/%E8%AE%B0%E5%BD%95%E7%94%9F%E6%B4%BB/" class="font_size_2">
-                记录生活
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" class="font_size_2">
+                数据结构与算法
             </a>
         
     </div>
@@ -1056,7 +1119,7 @@
         document.head.appendChild(customFont);
     }());
 </script>
-﻿
+﻿﻿
 
 
 
@@ -1316,10 +1379,11 @@ document.addEventListener("pjax:complete", () => {
 <div class="player" id="global-player">
   <div id="player-content" class="player-content">
     <div id="info" class="info">
-      <span class="artist">得田真裕 (Tokuda Masahiro)</span>
-      <span class="name">お母さんの手纸</span>
+      <span class="name"></span>
+      <span class="artist"></span>
       <div class="music-progress-bar">
         <div class="music-bar"></div>
+        <div class="progress-handle"></div>
       </div>
     </div>
     <div id="control-panel" class="control-panel">
@@ -1380,14 +1444,14 @@ document.addEventListener("pjax:complete", () => {
     display: block;
   }
   .player .info .artist {
-    color: #222;
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-  .player .info .name {
     color: #999;
     font-size: 10px;
     margin-bottom: 8px;
+  }
+  .player .info .name {
+    color: #222;
+    font-size: 12px;
+    margin-bottom: 5px;
   }
   .player .info .music-progress-bar {
     background-color: #ddd;
@@ -1403,6 +1467,46 @@ document.addEventListener("pjax:complete", () => {
     background-color: red;
     width: 10%;
     transition: all 0.2s ease;
+  }
+   
+  .player .info .music-progress-bar {
+    position: relative;
+    cursor: pointer;
+  }
+  .player .info .music-progress-bar .progress-handle {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    opacity: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+  .player .info .music-progress-bar:hover .progress-handle,
+  .player .info .music-progress-bar.dragging .progress-handle {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  .player .info .music-progress-bar.dragging {
+    user-select: none;
+  }
+  .player .info .music-progress-bar.dragging .progress-handle {
+    background-color: #ff5555;
+    box-shadow: 0 3px 8px rgba(255, 85, 85, 0.5);
+  }
+   
+  [data-scheme="dark"] .player .info .music-progress-bar .progress-handle {
+    background-color: #ff6b6b;
+  }
+  [data-scheme="dark"] .player .info .music-progress-bar.dragging .progress-handle {
+    background-color: #ff8787;
+    box-shadow: 0 3px 8px rgba(255, 135, 135, 0.5);
   }
   .player .info.active {
     top: -50px;
@@ -1425,10 +1529,10 @@ document.addEventListener("pjax:complete", () => {
     background-color: #333;
   }
   [data-scheme="dark"] .player .info .artist {
-    color: #fff;
+    color: #aaa;
   }
   [data-scheme="dark"] .player .info .name {
-    color: #aaa;
+    color: #fff;
   }
   [data-scheme="dark"] .player .info .music-progress-bar {
     background-color: #555;
@@ -1676,6 +1780,8 @@ document.addEventListener("pjax:complete", () => {
     const infoBar = document.getElementById("info");
     const audio = document.getElementById("audio");
     const progressBar = document.querySelector(".music-bar");
+    const progressContainer = document.querySelector(".music-progress-bar");
+    const progressHandle = document.querySelector(".progress-handle");
     const prevBtn = document.querySelector(".prev");
     const nextBtn = document.querySelector(".next");
     const albumArt = document.querySelector(".album-art");
@@ -1689,7 +1795,10 @@ document.addEventListener("pjax:complete", () => {
       !controlPanel ||
       !infoBar ||
       !audio ||
-      !volumeControl
+      !volumeControl ||
+      !progressBar ||
+      !progressContainer ||
+      !progressHandle
     ) {
       console.error(
         "播放器元素未找到：请确认播放器在 PJAX 替换区域外，并且 DOM 已渲染。"
@@ -1707,14 +1816,42 @@ document.addEventListener("pjax:complete", () => {
           cover:
             "https://img1.kuwo.cn/star/albumcover/500/17/88/1656025305.jpg",
         },
+        {
+          artist: "Candy_Wind",
+          name: "猫的舞步",
+          src: "/music/cat.mp3",
+          cover:
+            "https://imge.kugou.com/stdmusic/20190426/20190426182608184157.jpg",
+        },
       ],
       dark: [
+        {
+          artist: "泽野弘之",
+          name: "Call of Silence",
+          src: "/music/cos.mp3",
+          cover:
+            "https://imge.kugou.com/stdmusic/20200414/20200414214211536673.jpg",
+        },
+        {
+          artist: "艾比利",
+          name: "一个人想着一个人",
+          src: "/music/ygrxzygr.mp3",
+          cover:
+            "https://p1.music.126.net/Wgss_TpXKdG4IX5bvtIfWA==/109951170469142826.jpg?param=180y180",
+        },
         {
           artist: "TINY7",
           name: "浆果",
           src: "/music/jg.mp3",
           cover:
             "https://p1.music.126.net/BQAY8w9XzOj_j1wZgIsczQ==/109951168247366566.jpg",
+        },
+        {
+          artist: "得田真裕",
+          name: "お母さんの手纸",
+          src: "/music/mom.mp3",
+          cover:
+            "https://imge.kugou.com/stdmusic/20241227/20241227181702669051.jpg",
         },
       ],
     };
@@ -1837,8 +1974,134 @@ document.addEventListener("pjax:complete", () => {
       if (audio.duration) {
         const progress = (audio.currentTime / audio.duration) * 100;
         if (progressBar) progressBar.style.width = progress + "%";
+        if (progressHandle) {
+          progressHandle.style.left = progress + "%";
+        }
       }
     }
+
+    
+    let isDragging = false;
+    let wasPlaying = false;
+
+    
+    function calculateProgress(e) {
+      const rect = progressContainer.getBoundingClientRect();
+      let clientX;
+      
+      if (e.type.startsWith('touch')) {
+        clientX = e.touches[0].clientX;
+      } else {
+        clientX = e.clientX;
+      }
+      
+      const pos = clientX - rect.left;
+      const width = rect.width;
+      let progress = (pos / width) * 100;
+      
+      
+      progress = Math.max(0, Math.min(100, progress));
+      
+      return progress;
+    }
+
+    
+    function updateProgressDisplay(progress) {
+      if (progressBar) progressBar.style.width = progress + "%";
+      if (progressHandle) progressHandle.style.left = progress + "%";
+    }
+
+    
+    function setAudioProgress(progress) {
+      if (audio.duration) {
+        const time = (progress / 100) * audio.duration;
+        audio.currentTime = time;
+      }
+    }
+
+    
+    function startDrag(e) {
+      isDragging = true;
+      wasPlaying = !audio.paused;
+      
+      
+      if (wasPlaying) {
+        audio.pause();
+      }
+      
+      
+      progressContainer.classList.add('dragging');
+      
+      
+      const progress = calculateProgress(e);
+      updateProgressDisplay(progress);
+      
+      
+      e.preventDefault();
+      e.stopPropagation();
+    }
+
+    
+    function drag(e) {
+      if (!isDragging) return;
+      
+      const progress = calculateProgress(e);
+      updateProgressDisplay(progress);
+      
+      e.preventDefault();
+      e.stopPropagation();
+    }
+
+    
+    function endDrag() {
+      if (!isDragging) return;
+      
+      isDragging = false;
+      
+      
+      progressContainer.classList.remove('dragging');
+      
+      
+      const progress = parseFloat(progressBar.style.width) || 0;
+      
+      
+      setAudioProgress(progress);
+      
+      
+      if (wasPlaying) {
+        audio.play().catch(() => {
+          
+          isPlaying = false;
+          controlPanel.classList.remove('active');
+          infoBar.classList.remove('active');
+          syncRotation();
+        });
+      }
+    }
+
+    
+    function clickProgress(e) {
+      if (isDragging) return;
+      
+      const progress = calculateProgress(e);
+      setAudioProgress(progress);
+      updateProgressDisplay(progress);
+    }
+
+    
+    progressContainer.addEventListener('mousedown', startDrag);
+    progressHandle.addEventListener('mousedown', startDrag);
+    document.addEventListener('mousemove', drag);
+    document.addEventListener('mouseup', endDrag);
+    document.addEventListener('mouseleave', endDrag);
+    progressContainer.addEventListener('click', clickProgress);
+
+    
+    progressContainer.addEventListener('touchstart', startDrag);
+    progressHandle.addEventListener('touchstart', startDrag);
+    document.addEventListener('touchmove', drag);
+    document.addEventListener('touchend', endDrag);
+    document.addEventListener('touchcancel', endDrag);
 
     
     function loadSong(index) {
@@ -1897,7 +2160,11 @@ document.addEventListener("pjax:complete", () => {
     playBtn.addEventListener("click", togglePlay);
     prevBtn && prevBtn.addEventListener("click", playPrev);
     nextBtn && nextBtn.addEventListener("click", playNext);
-    audio.addEventListener("timeupdate", updateProgress);
+    audio.addEventListener("timeupdate", () => {
+      if (!isDragging) {
+        updateProgress();
+      }
+    });
     audio.addEventListener("ended", playNext);
 
     
@@ -1939,22 +2206,37 @@ document.addEventListener("pjax:complete", () => {
     
     
     
-    function switchPlaylistOnThemeChange() {
-      const wasPlaying = !audio.paused;
-      const oldSrc = absUrl(audio.currentSrc || audio.src || "");
+    
+    if (window.__PLAYER_LAST_THEME__ == null) {
+      window.__PLAYER_LAST_THEME__ =
+        document.documentElement.getAttribute("data-scheme") || "light";
+    }
 
+    function getThemeNow() {
+      return document.documentElement.getAttribute("data-scheme") || "light";
+    }
+
+    function applyThemePlaylistKeepState() {
+      const newTheme = getThemeNow();
+      if (newTheme === window.__PLAYER_LAST_THEME__) return; 
+      window.__PLAYER_LAST_THEME__ = newTheme;
+
+      const wasPlaying = !audio.paused; 
+
+      
       songs = getCurrentPlaylist();
 
-      let idx = songs.findIndex((s) => absUrl(s.src) === oldSrc);
-      if (idx < 0) idx = 0;
+      
+      currentSongIndex = 0;
+      loadSong(0);
 
-      loadSong(idx);
-
+      
       if (wasPlaying) {
         isPlaying = true;
         controlPanel.classList.add("active");
         infoBar.classList.add("active");
         audio.play().catch(() => {
+          
           isPlaying = false;
           controlPanel.classList.remove("active");
           infoBar.classList.remove("active");
@@ -1962,18 +2244,32 @@ document.addEventListener("pjax:complete", () => {
         });
       } else {
         isPlaying = false;
+        audio.pause();
         controlPanel.classList.remove("active");
         infoBar.classList.remove("active");
-        audio.pause();
       }
 
       syncRotation();
+
+      
+      if (progressBar) progressBar.style.width = "0%";
     }
 
-    window.addEventListener("onColorSchemeChange", () => {
-      songs = getCurrentPlaylist();
-      
-    });
+    
+    if (!window.__PLAYER_THEME_OBSERVER__) {
+      window.__PLAYER_THEME_OBSERVER__ = new MutationObserver((mutations) => {
+        for (const m of mutations) {
+          if (m.type === "attributes" && m.attributeName === "data-scheme") {
+            applyThemePlaylistKeepState();
+          }
+        }
+      });
+
+      window.__PLAYER_THEME_OBSERVER__.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ["data-scheme"],
+      });
+    }
 
     
     if (!audio.src) loadSong(0);
